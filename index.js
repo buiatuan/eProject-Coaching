@@ -33,3 +33,13 @@ app.get('/help-support', function (req, res) {
 app.get('/privacy-policy', function (req, res) {
     res.render("privacy_policy");
 });
+
+// Sign in
+app.get('/sign-in', function (req, res) {
+    res.render("sign_in");
+});
+
+// Register
+app.get('/register', function (req, res) {
+    res.render("register");
+});
