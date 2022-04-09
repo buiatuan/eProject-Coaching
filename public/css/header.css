@@ -1,17 +1,21 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
+
 .container{
     width: 1440px;
     margin: 0 auto;
 }
-.header{
-    font-family: 'Roboto', sans-serif;
+.header-row{
+    font-family: 'Noto Sans', sans-serif;
     font-style: italic;
     height: 100px;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 .header-body{
     display: flex;
@@ -46,6 +50,10 @@
 .nav-menu a{
     text-decoration: none;
     color: #3F3A64;
+}
+.nav-menu a i{
+    margin-left: 5px;
+    font-size: 17px;
 }
 .nav-menu li:hover>a{
     color: #7BC3BF;

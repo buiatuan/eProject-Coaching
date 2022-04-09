@@ -34,6 +34,11 @@ app.get('/privacy-policy', function (req, res) {
     res.render("privacy_policy");
 });
 
+// Blog
+app.get('/blog', function (req, res) {
+    res.render("blog");
+});
+
 // Sign in
 app.get('/sign-in', function (req, res) {
     res.render("sign_in");
