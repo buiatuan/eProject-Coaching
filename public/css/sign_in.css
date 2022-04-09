@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: #22536F;
+    width: 1440px;
+    height: 730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.center{
+    width: 624px;
+}
+.img-signin{
+    display: flex;
+    justify-content: center;
+}
+.img-signin img{
+    width: 330px;
+    padding-top: 67px;
+}
+.sign{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.sign-up{
+    width: 50%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+.sign-up a{
+    color: #ffffff;
+}
+.sign-in {
+    width: 50%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: 2px solid #79BBBA;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.sign-in a{
+    color: #ffffff;
+}
+.form-signin{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #22536F;
+    border-radius: 10px;
+    border: 1px solid #61B7B2;
+    outline: none;
+    color: #ffffff;
+}
+label{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.btn-create-account{
+     display: flex;
+     justify-content: center;
+}
+.btn-create {
+    background-color: #61B7B2;
+    color: #ffffff;
+    width: 80%;
+    border-radius: 8px;
+    padding: 10px;
+}
+.link{
+    text-align: center;
+}
+.link-p{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+.btn-link-app{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-google {
+    background-color: #AC2F2F;
+    width: 35%;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 22px;
+}
+.btn-facebook{
+    background-color: #0F80F0;
+    width: 35%;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 22px;
+}

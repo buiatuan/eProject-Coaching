@@ -5,9 +5,45 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/register.css"/>
+    <%- include("stylesheet.ejs") %>
     <title>Register</title>
 </head>
 <body>
-
+     <div class="container">
+         <div class="row center">
+             <div class="img-register">
+                 <img src="images/imgs_sign/sign-up.png">
+             </div>
+             <div class="sign">
+                 <div class="sign-up">
+                     <a href="#"> Register </a>
+                 </div>
+                 <div class="sign-in">
+                     <a href="#"> Sign in </a>
+                 </div>
+             </div>
+             <form class="form">
+                 <input class="form-register" type="text" name="fullname"  placeholder="Full Name" required/>
+                 <input class="form-register" type="email" name="email"  placeholder="Email" required/>
+                 <input class="form-register" type="text" name="user_name"  placeholder="Public user name" required/>
+                 <input class="form-register" type="password" name="password"  placeholder="Password" required/>
+                 <input class="form-register" type="text" name="country"  placeholder="Country/Region" required/>
+                 <input class="form-checkbox" type="checkbox"  name="confirm"/>
+                 <label> I agree that edX may send me marketing messages </label>
+                 <p> By creating an account, you agree to the Terms of Service and Honor Codein a new tab and you acknowledge that edX and each Member process your personal data in accordance with the Privacy Policyin a new tab </p>
+                 <div class="btn-create-account">
+                     <button class="btn-create" type="submit">CREATE AN ACCOUNT</button>
+                 </div>
+             </form>
+             <div class="link">
+                 <p class="link-p"> OR </p>
+                 <div class="btn-link-app">
+                     <button class="btn-google" type="submit">Google</button>
+                     <button class="btn-facebook" type="submit">Facebook</button>
+                 </div>
+             </div>
+         </div>
+     </div>
 </body>
 </html>

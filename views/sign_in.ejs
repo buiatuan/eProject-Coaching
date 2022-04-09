@@ -6,9 +6,41 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/sign_in.css"/>
+    <%- include("stylesheet.ejs") %>
     <title>Sign In</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="row center">
+            <div class="img-signin">
+                <img src="images/imgs_sign/sign-up.png">
+            </div>
+            <div class="sign">
+                <div class="sign-up">
+                    <a href="#"> Register </a>
+                </div>
+                <div class="sign-in">
+                    <a href="#"> Sign in </a>
+                </div>
+            </div>
+            <form class="form">
+                <input class="form-signin" type="text" name="user_name"  placeholder="Username or Email" required/>
+                <input class="form-signin" type="password" name="password"  placeholder="Password" required/>
+                <input class="form-checkbox" type="checkbox"  name="confirm"/>
+                <label> Forgot Password </label>
+                <div class="btn-create-account">
+                    <button class="btn-create" type="submit">SIGN IN</button>
+                </div>
+            </form>
+            <div class="link">
+                <p class="link-p"> OR </p>
+                <div class="btn-link-app">
+                    <button class="btn-google" type="submit">Google</button>
+                    <button class="btn-facebook" type="submit">Facebook</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
