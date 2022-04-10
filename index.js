@@ -38,6 +38,10 @@ app.get('/privacy-policy', function (req, res) {
 app.get('/blog', function (req, res) {
     res.render("blog");
 });
+// Terms
+app.get('/terms', function (req, res) {
+    res.render("term");
+});
 
 // Sign in
 app.get('/sign-in', function (req, res) {
