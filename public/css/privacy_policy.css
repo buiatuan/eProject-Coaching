@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1440px;
+}
+.banner{
+    background-color: #F7F5F4;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+.banner-1 p{
+    text-align: center;
+    font-size: 75px;
+    color:#3ABAB3;
+}
+.banner-2 p{
+    text-align: center;
+    font-size: 35px;
+    color: #3F3A64;
+}
+.btn-privacy{
+    background-color: #3ABAB3;
+    width: 25%;
+    padding: 15px;
+    margin-left: 120px;
+    font-size: 27px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 2px;
+    border: none;
+}
+.box-1{
+    font-size: 30px;
+    color: #3F3A64;
+    margin-top: 60px;
+    margin-left: 120px;
+}
+.box-2{
+    color: #3F3A64;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+    padding-bottom: 100px;
+    margin-left: 120px;
+    margin-right: 100px;
+}
