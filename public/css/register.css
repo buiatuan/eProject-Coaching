@@ -114,3 +114,9 @@ p{
     font-size: 18px;
     margin-right: 22px;
 }
+::placeholder{
+    color: #9AAAB4;
+}
+a:hover{
+
+}
