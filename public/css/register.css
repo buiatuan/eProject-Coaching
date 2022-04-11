@@ -117,6 +117,13 @@ p{
 ::placeholder{
     color: #9AAAB4;
 }
-a:hover{
-
+button.btn-create[type=submit]:hover {
+    background-color: #3ABAB3;
 }
+button.btn-google[type=submit]:hover {
+    background-color: #761c19;
+}
+button.btn-facebook[type=submit]:hover {
+    background-color: #1b6d85;
+}
+

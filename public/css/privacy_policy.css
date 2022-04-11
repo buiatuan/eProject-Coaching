@@ -45,3 +45,6 @@
     margin-left: 120px;
     margin-right: 100px;
 }
+button[type=submit]:hover {
+    background-color: #1b6d85;
+}
