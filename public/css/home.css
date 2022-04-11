@@ -10,7 +10,6 @@
 
 .section{
     display: block;
-    margin-top: 100px;
     font-family: 'Noto Sans', sans-serif;
 }
 /*banner-top*/
@@ -73,7 +72,8 @@ a.banner-top__btn--item{
 }
 .feature{
     width: 100%;
-    margin-top: 50px;
+    margin: 100px 0;
+    float: left;
 }
 .feature-top{
     display: flex;
@@ -125,6 +125,7 @@ a.banner-top__btn--item{
     width: 100%;
     padding: 0 120px;
     margin-top: 100px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -183,4 +184,224 @@ a.banner-top__btn--item{
     text-decoration: none;
     color: #ffffff;
     background-color: #378886;
+}
+
+/*Popular-course*/
+.popular-course{
+    width: 100%;
+    background-color: #FAF9F8;
+    padding: 0 50px;
+}
+.popular-course__content{
+    text-align: center;
+    margin-top: 80px;
+    display: block;
+}
+.popular-course__content h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #61B7B2;
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.popular-course__content h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.popular-course__content p{
+    font-size: 14px;
+}
+.popular-course__list{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+.popular-course__item{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.popular-course__item-row{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #cccccc;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 510px;
+}
+.popular-course__item--icon img {
+    width: 100%;
+}
+.popular-course__item--text{
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 20px;
+    position: relative;
+}
+.popular-course__item--text h4{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 30px;
+    height: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.popular-course__item--text h4 a{
+    color: #3F3A64;
+}
+.popular-course__item--text h4:hover a{
+    text-decoration: none;
+    color: #61B7B2;
+    transition: 0.4s;
+}
+
+.popular-course__item--point{
+    font-size: 34px;
+    font-weight: 600;
+    color: #61B7B2;
+    position: absolute;
+    right: 30px;
+}
+.popular-course__item--text p{
+    margin: 62px 0 0 100px;
+}
+.popular-course__text{
+    display: flex;
+    margin: 60px auto;
+    width: 40%;
+    text-align: center;
+}
+.popular-course__text p{
+    font-size: 16px;
+    font-style: italic;
+}
+.popular-course__text p a{
+    text-decoration: underline;
+}
+
+/*statistical*/
+.statistical{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 50px;
+}
+.statistical-heading{
+    width: 70%;
+    display: block;
+    text-align: left;
+    margin-bottom: 50px;
+    padding-left: 54px;
+}
+.statistical-heading h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: #61B7B2;
+    text-transform: uppercase;
+}
+.statistical-heading h3{
+    font-size: 40px;
+    word-spacing: 3px;
+}
+.statistical-data{
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+}
+.statistical-item--data{
+    font-size: 60px;
+    color: #61B7B2;
+    font-weight: 700;
+}
+.statistical-item--data span{
+    font-size: 40px;
+}
+.statistical-item p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Popular-blog*/
+.Popular-blog{
+    padding: 0 50px;
+}
+
+.Popular-blog_item-date{
+    display: block;
+    margin: 20px 20px 0 ;
+}
+.popular-course__item--btn{
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    float: right;
+    padding: 8px 40px;
+    background-color: #61B7B2;
+    margin-right: 24px;
+    border-radius: 8px;
+}
+.popular-course__item--btn:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(97,183,178, 0.8);
+}
+
+/*subscribe-form*/
+.subscribe-form{
+    padding: 0 50px;
+    margin: 60px;
+}
+.subscribe-form-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-form__text h4{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #61B7B2;
+}
+.subscribe-form__text h3{
+    font-size: 36px;
+    font-weight: 400;
+    word-spacing: 4px;
+}
+.subscribe-form--main{
+    width: 50%;
+    border: 2px solid rgba(112,112,112,0.6);
+    border-radius: 10px;
+}
+.subscribe-form--main form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-form--main-input{
+    flex: 1;
+    padding: 14px 10px;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.subscribe-form--main-submit{
+    padding: 10px 38px;
+    margin-right: 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #61B7B2;
+    color: #ffffff;
+    font-size: 12px;
+}
+.subscribe-form--main-submit:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
 }
