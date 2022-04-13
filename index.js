@@ -9,6 +9,7 @@ app.listen(port, () => {
 app.set("view engine","ejs");
 app.use(express.static("public"));
 
+
 // tạo trang chủ
 app.get('/', function (req, res) {
     res.render("home");
