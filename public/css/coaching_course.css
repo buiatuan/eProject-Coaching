@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.content-top{
+    width: 100%;
+    background-color: #F7F5F4;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.content-top-col{
+    text-align: center;
+    padding: 0 50px;
+}
+.content-top-col h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: #3ABAB3;
+}
+.content-top-col h3{
+    font-size: 40px;
+    line-height: 50px;
+    word-spacing: 5px;
+
+}
+.content-name {
+    width: 30%;
+    height: 80px;
+    background-color: #3ABAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 145px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.content-name h3{
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-details{
+    display: flex;
+
+}
+.product-details img{
+    width:382px ;
+    height:407px ;
+   margin-left: 136px;
+    margin-top: 75px;
+}
+.text h5{
+    padding: 120px 0 30px 50px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight:600;
+    color: #3ABAB3;
+}
+.text h3{
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight:600;
+    color: #3F3A64;
+}
+.text p{
+    width: 699px;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 35px;
+    padding-left: 50px;
+}
+.product-details button{
+    width: 165px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 430px;
+    border-radius: 10px;
+    padding: 0 50px 0 50px;
+    color: white;
+    background-color: #61B7B2;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    border: none;
+}
+/*filler*/
+.filter {
+    display: flex;
+}
+.filter img{
+
+    margin-left: 635px;
+    margin-top: -60px;
+}
+.filter p{
+
+    margin-top: -40px;
+    margin-left: 14px;
+}
+.filter u{
+
+    margin-top: -40px;
+    margin-left: 400px;
+    color: #61B7B2;
+    line-height: 20px;
+}
+.checkbox33 .types{
+    display: flex;
+
+}
+.checkbox33 .range{
+    display: flex;
+
+}
+.checkbox33 .only{
+    display: flex;
+
+}
+.checkbox33 p{
+    margin: 50px 0px 0px 143px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.checkbox333{
+   margin-top: 60px;
+    margin-left: 160px;
+
+}
+.form-check-inline{
+   margin-right: 90px;
+}
+.sidebar{
+    display: none;
+}
+
+/*onclick*/
