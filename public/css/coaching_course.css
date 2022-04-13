@@ -34,7 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 145px;
+    margin-left: 58px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -89,13 +89,16 @@ body{
     justify-content: center;
     border: none;
 }
+
 /*filler*/
 .filter {
     display: flex;
+
 }
+
 .filter img{
 
-    margin-left: 635px;
+    margin-left: 489px;
     margin-top: -60px;
 }
 .filter p{
@@ -105,8 +108,8 @@ body{
 }
 .filter u{
 
-    margin-top: -40px;
-    margin-left: 400px;
+    margin-top: -35px;
+    margin-left: 530px;
     color: #61B7B2;
     line-height: 20px;
 }
@@ -140,3 +143,102 @@ body{
 }
 
 /*onclick*/
+.content-name:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
+}
+.content1-name:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
+}
+.red{
+    color: #C93D5B;
+}
+
+/*on off*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D0D1D3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #3ABAB3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+    display: none;
+}
+
+.on, .off
+{
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 15px;
+}
+
+.slider.round:before {
+    border-radius: 50%;}
+.off{
+    color: black;
+}
+.switch{
+    margin-top: 50px;
+    margin-left: 60px;
+}
