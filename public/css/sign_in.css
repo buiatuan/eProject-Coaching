@@ -121,5 +121,11 @@ button.btn-google[type=submit]:hover {
 button.btn-facebook[type=submit]:hover {
     background-color: #1b6d85;
 }
+.sign-up a:hover{
+    color:#9AAAB4;
+}
+.sign-in a:hover{
+    color:#9AAAB4;
+}
 
 

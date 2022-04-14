@@ -84,6 +84,7 @@ p{
 }
 .link{
     text-align: center;
+    margin-bottom: 30px;
 }
 .link-p{
     padding-left: 0;
@@ -126,4 +127,9 @@ button.btn-google[type=submit]:hover {
 button.btn-facebook[type=submit]:hover {
     background-color: #1b6d85;
 }
-
+.sign-up a:hover{
+    color:#9AAAB4;
+}
+.sign-in a:hover{
+    color:#9AAAB4;
+}
