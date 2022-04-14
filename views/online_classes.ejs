@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <%- include("stylesheet.ejs") %>
+    <link rel="stylesheet" href="/css/coaching_course.css">
+    <link rel="stylesheet" href="/css/online_classes.css">
+</head>
+<body>
+<%- include("head.ejs") %>
+<div class="content-top">
+    <div class="container">
+        <div class="content-top-col">
+            <h1>We’re here for the COACH</h1>
+            <h3>Whatever your role - coach, facilitator, instructor, leader, teacher or trainer -
+                if you’re helping people to be active and improve, we’re here for you. </h3>
+        </div>
+    </div>
+
+</div>
+<section style="width: 1440px;margin: 0 auto;margin-bottom: 80px">
+    <div class="container">
+        <div style="cursor: pointer" class="content-name">
+            <h3>ONLINE CLASSES</h3>
+        </div>
+        <div class="input">
+        <div  class="form-check form-check-inline">
+            <input style="font-size: 25px " class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label style="font-size:20px;font-weight: 100" class="form-check-label" for="inlineCheckbox1">Free (4)</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input style="font-size: 25px;margin-left: 100px" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label style="font-size:20px;font-weight: 100;margin-left: 10px" class="form-check-label" for="inlineCheckbox2">Pay Fee (19)</label>
+        </div>
+        </div>
+        <img style="width: 775px; margin-left: 407px;margin-top: -74px;margin-right: 110px;" src="images/imgs_coaching_course/Line 1@2x.png" alt="">
+    </div>
+    <div class="product">
+        <div class="product-details">
+            <img src="images/imgs_coaching_course/Mask Group 14@2x.jpg" >
+            <div class="text">
+                <h5>WORKSHOPS <span class="red">(FREE)</span></h5>
+                <h3>Behaviour Change Tactics</h3>
+                <p>Learn useful strategies to help people get active, and innovative nudge techniques to ensure they stay active</p>
+                <button class="content-name"> DEATAILS</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-details">
+            <img src="images/imgs_coaching_course/Mask Group 15@2x.jpg" >
+            <div class="text">
+                <h5>WORKSHOPS <span class="red">(FREE)</span></h5>
+                <h3>Coaching Skills for Learner-Centred Conversations</h3>
+                <p>Using coaching approaches in your educational conversations will help you support learners to really maximise their potential, as you become an even more effective and inspiring educator. </p>
+                <button class="content-name"> DEATAILS</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-details">
+            <img src="images/imgs_coaching_course/Mask Group 16@2x.jpg" >
+            <div class="text">
+                <h5>WORKSHOPS <span class="red">(FREE)</span></h5>
+                <h3>Understand Connect, Thrive: Knowing Your People</h3>
+                <p>This online classroom will demonstrate how a commitment to taking a genuine interest in the people at your sessions is crucial to helping them thrive.</p>
+                <button class="content-name"> DEATAILS</button>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="product-details">
+            <img src="images/imgs_coaching_course/Mask Group 17@2x.jpg" >
+            <div class="text">
+                <h5>WORKSHOPS <span class="red">(FREE)</span></h5>
+                <h3>Level 3 Certificate in Talented Athlete Lifestyle Support</h3>
+                <p>Provides introductory knowledge and skills to support practitioners' training in a role of Talented Athlete Lifestyle Advisor, or similar.</p>
+                <button class="content-name"> DEATAILS</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("footer.ejs") %>
+<script>
+    var a;
+    function show_hide(){
+        if(a==1)
+        {
+            document.getElementById("show").style.display="inline";
+            return a=0;
+        }
+        else {
+            document.getElementById("show").style.display="none";
+            return a=1;
+        }
+    }
+
+</script>
+</body>
+</html>

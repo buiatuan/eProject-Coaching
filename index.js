@@ -9,6 +9,7 @@ app.listen(port, () => {
 app.set("view engine","ejs");
 app.use(express.static("public"));
 
+
 // tạo trang chủ
 app.get('/', function (req, res) {
     res.render("home");
@@ -51,4 +52,19 @@ app.get('/sign-in', function (req, res) {
 // Register
 app.get('/register', function (req, res) {
     res.render("register");
+});
+
+// Coaching course
+app.get('/coaching-course', function (req, res) {
+    res.render("coaching_course");
+});
+
+// Online class
+app.get('/online-class', function (req, res) {
+    res.render("online_classes");
+});
+
+// product details
+app.get('/product-details', function (req, res) {
+    res.render("product_details");
 });

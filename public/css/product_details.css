@@ -1,0 +1,299 @@
+.container1{
+    margin-bottom: 76px;
+    display: flex;
+}
+.content1-name {
+    width: 469px;
+    height: 98px;
+    background-color: #3ABAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 190px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.content1-name h3{
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.text1{
+margin-left: 24px;
+}
+.text1 h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: #61B7B2;
+}
+.text1 p{
+    font-size: 25px;
+    font-weight: 500;
+    color: #3F3A64;
+}
+.box{
+    width: 663px;
+    margin-left: 190px;
+}
+.box img{
+    width: 700px;
+    height: 403px;
+}
+.click{
+    display: flex;
+}
+.content11-name {
+    width: 469px;
+    height: 98px;
+    background-color: #3ABAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content11-name h3{
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*Tab*/
+
+
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+    overflow: hidden;
+    background-color: #F7F5F4;
+    width: 663px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* định dạng các button tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 112px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+}
+
+
+/* đổi màu khi một button tab được hover */
+div.tab button:hover {
+    background-color: #e6ecec;
+
+}
+
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+div.tab button.active {
+    background-color: #3ABAB3;
+}
+
+/* định dạng nội dung hiển thị */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    margin-top: 50px;
+
+}
+.box1 .tab .tablinks{
+    color: #3F3A64;
+}
+.box1 .tab .tablinks.active{
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+ul li{
+    margin-bottom: 0px;
+    padding: 5px ;
+
+}
+ul li i{
+    margin-right: 20px;
+    color: #3ABAB3;
+    font-size: 18px;
+}
+.tabcontent img{
+    margin-top: 30px;
+    width: 300px;
+    height: 293px;
+}
+.box2{
+    background-color: #F7F5F4;
+    float: right;
+    width: 430px;
+    height: 616px;
+    padding: 75px 30px 42px 30px;
+    margin-right: 100px;
+    border-radius: 5px;
+    border-top: 3px solid #2E526C;
+}
+.box2 .price img{
+    width: 41.74px;
+    height: 21.4px;
+    color: #22536F;
+    margin-bottom: 20px;
+}
+.box2 .price .price-text{
+    display: flex;
+    float: right;
+
+}
+.box2 .price {
+    border-bottom: 1px solid #D0D1D3;
+    margin-bottom: 20px;
+
+}
+.box2 .instructor {
+    border-bottom: 1px solid #D0D1D3;
+    margin-bottom: 20px;
+
+}
+.box2 .instructor img{
+    width: 32px;
+    height: 33.34px;
+    color: #22536F;
+    margin-bottom: 20px;
+}
+.box2 .instructor .price-text{
+    display: flex;
+    float: right;
+
+}
+.content-name {
+    width: 100%;
+    height: 55px;
+    background-color: #3ABAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.content-name h3{
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.popular-course{
+    width: 100%;
+    background-color: #FAF9F8;
+    padding: 0px 50px 80px 50px;
+}
+.popular-course__content{
+    text-align: left;
+    margin-top: 80px;
+    display: block;
+    margin-left: 65px;
+}
+.popular-course__content p{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #3F3A64;
+    font-weight: 700;
+
+
+}
+.popular-course__content h3{
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+.popular-course__content p{
+    font-size: 14px;
+}
+.popular-course__list{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+.popular-course__item{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 30px;
+}
+.popular-course__item-row{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px #cccccc;
+    padding-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 510px;
+}
+.popular-course__item--icon img {
+    width: 100%;
+}
+.popular-course__item--text{
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 20px;
+    position: relative;
+}
+.popular-course__item--text h4{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 30px;
+    height: 90px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+.popular-course__item--text h4 a{
+    color: #3F3A64;
+}
+.popular-course__item--text h4:hover a{
+    text-decoration: none;
+    color: #61B7B2;
+    transition: 0.4s;
+}
+
+.popular-course__item--point{
+    font-size: 34px;
+    font-weight: 600;
+    color: #61B7B2;
+    position: absolute;
+    right: 30px;
+}
+.popular-course__item--text p{
+    margin: 62px 0 0 100px;
+}
+.popular-course__text{
+    display: flex;
+    margin: 60px auto;
+    width: 40%;
+    text-align: center;
+}
+.popular-course__text p{
+    font-size: 16px;
+    font-style: italic;
+}
+.popular-course__text p a{
+    text-decoration: underline;
+}
+.content-name:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
+}
+.content1-name:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
+}

@@ -1,0 +1,10 @@
+.input{
+    display: flex;
+    margin-left: 650px;
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+.content-name:hover{
+    background-color: rgba(97,183,178, 0.8);
+    transition: 0.5s;
+}
