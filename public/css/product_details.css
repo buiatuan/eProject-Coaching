@@ -1,6 +1,7 @@
 .container1{
     margin-bottom: 76px;
     display: flex;
+    margin-left: 45px;
 }
 .content1-name {
     width: 469px;
@@ -111,7 +112,9 @@ div.tab button.active {
 .box1 .tab .tablinks.active{
     color: white;
 }
-
+.box1{
+    margin-left: 43px;
+}
 ul{
     list-style: none;
     padding-left: 40px;
@@ -138,7 +141,7 @@ ul li i{
     width: 430px;
     height: 616px;
     padding: 75px 30px 42px 30px;
-    margin-right: 100px;
+    margin-right: 130px;
     border-radius: 5px;
     border-top: 3px solid #2E526C;
 }
