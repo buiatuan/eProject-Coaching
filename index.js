@@ -68,3 +68,8 @@ app.get('/online-class', function (req, res) {
 app.get('/product-details', function (req, res) {
     res.render("product_details");
 });
+
+// online classes pay fee
+app.get('/online-class-payfee', function (req, res) {
+    res.render("online_classes_payfee");
+});
