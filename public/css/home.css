@@ -15,10 +15,11 @@
 /*banner-top*/
 .banner-top{
     width: 100%;
+    padding: 0;
     position: relative;
 }
 .banner-top__img{
-    width: 100%;
+    width: 100% !important;
 }
 .banner-top__text{
     text-align: center;
@@ -94,7 +95,7 @@ a.banner-top__btn--item{
 .feature-main{
     display: flex;
     justify-content: space-around;
-    padding: 0 122px;
+    padding: 0 123px;
     margin-top: 30px;
 }
 .feature-item{
@@ -123,7 +124,7 @@ a.banner-top__btn--item{
 /*section-about-us*/
 .section-about-us{
     width: 100%;
-    padding: 0 122px;
+    padding: 0 131px;
     margin-top: 100px;
     margin-bottom: 50px;
     display: flex;
@@ -215,7 +216,7 @@ a.banner-top__btn--item{
 }
 .popular-course__list{
     width: 100%;
-    padding: 0 40px;
+    padding: 0 46px;
     display: flex;
 }
 
@@ -289,7 +290,7 @@ a.banner-top__btn--item{
 .statistical{
     width: 100%;
     margin-top: 50px;
-    padding: 0 66px;
+    padding: 0 70px;
 }
 .statistical-heading{
     width: 70%;
@@ -354,7 +355,7 @@ a.banner-top__btn--item{
 
 /*subscribe-form*/
 .subscribe-form{
-    padding: 0 56px;
+    padding: 0 67px;
     margin: 60px;
 }
 .subscribe-form-row{
