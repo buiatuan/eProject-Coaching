@@ -216,7 +216,7 @@ a.banner-top__btn--item{
 }
 .popular-course__list{
     width: 100%;
-    padding: 0 46px;
+    padding: 0 56px;
     display: flex;
 }
 
@@ -290,7 +290,7 @@ a.banner-top__btn--item{
 .statistical{
     width: 100%;
     margin-top: 50px;
-    padding: 0 70px;
+    padding: 0 72px;
 }
 .statistical-heading{
     width: 70%;
@@ -355,7 +355,7 @@ a.banner-top__btn--item{
 
 /*subscribe-form*/
 .subscribe-form{
-    padding: 0 67px;
+    padding: 0 71px;
     margin: 60px;
 }
 .subscribe-form-row{
