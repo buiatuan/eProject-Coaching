@@ -3,3 +3,6 @@
     --btn-hover: rgba(97,183,178, 0.8);
 
 }
+a:focus{
+    text-decoration: none;
+}

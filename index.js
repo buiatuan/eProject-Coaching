@@ -53,3 +53,18 @@ app.get('/sign-in', function (req, res) {
 app.get('/register', function (req, res) {
     res.render("register");
 });
+
+// Coaching course
+app.get('/coaching-course', function (req, res) {
+    res.render("coaching_course");
+});
+
+// Online class
+app.get('/online-class', function (req, res) {
+    res.render("online_classes");
+});
+
+// product details
+app.get('/product-details', function (req, res) {
+    res.render("product_details");
+});
