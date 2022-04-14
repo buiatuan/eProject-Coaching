@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.container{
+    width: 1440px;
+}
 .img-contact img{
     width: 100%;
 }
@@ -8,7 +11,7 @@
     background-color: #3ABAB3;
     width: 25%;
     padding: 25px;
-    margin-left: 150px;
+    margin-left: 265px;
     font-size: 27px;
     border-radius: 5px;
     color: #ffffff;
@@ -17,7 +20,7 @@
 }
 .contact-us{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
 }
 .box-1{
@@ -25,12 +28,16 @@
     font-size: 50px;
     color: #3F3A64;
     margin-top: 30px;
+    margin-right: 50px;
 }
 .box-2{
     font-size: 15px;
     color: #88859F;
     padding-top: 40px;
-    padding-right: 310px;
+    margin-left: 265px;
+}
+.sp-box2{
+    color: #707070;
 }
 .form-contact{
     width: 100%;
@@ -52,11 +59,11 @@ label{
     margin-bottom: -10px;
 }
 .form-label{
-    margin-left: 150px;
+    margin-left: 265px;
 }
 .form-yname1{
     width: 33.33%;
-    margin-left: 5px;
+    margin-left: 245px;
     padding: 10px;
 }
 .form-yname2{
@@ -65,14 +72,15 @@ label{
     padding: 10px;
 }
 .form-mail-subj{
-    margin-left: 150px;
-    width: 65%;
+    width: 65.50%;
+    margin-left: 265px;
 }
 .form-label-ms{
     margin-bottom: 10px;
 }
 .form-category{
-    margin-left: 150px;
+    width: 90%;
+    margin-left: 265px;
     margin-bottom: 10px;
 }
 .form-ctgr{
@@ -86,7 +94,8 @@ label{
     margin-bottom: 10px;
 }
 .form-message{
-    margin-left: 150px;
+    width: 90%;
+    margin-left: 265px;
 }
 .form-label-msg{
     margin-bottom: 10px;
@@ -103,7 +112,7 @@ label{
     width: 10%;
     border-radius: 15px;
     border: 1px solid #61B7B2;
-    margin-left: 950px;
+    margin-left: 1070px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
