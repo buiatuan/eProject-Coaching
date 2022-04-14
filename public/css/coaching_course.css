@@ -106,15 +106,21 @@ body{
     margin-top: -40px;
     margin-left: 14px;
 }
-.filter u{
-
-    margin-top: -35px;
+.filter button{
+    margin-top: -40px;
     margin-left: 530px;
     color: #61B7B2;
     line-height: 20px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.checkbox33{
+    margin-left: -85px;
 }
 .checkbox33 .types{
     display: flex;
+
 
 }
 .checkbox33 .range{
@@ -133,6 +139,7 @@ body{
 .checkbox333{
    margin-top: 60px;
     margin-left: 160px;
+
 
 }
 .form-check-inline{
