@@ -28,13 +28,16 @@
     font-size: 50px;
     color: #3F3A64;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 .box-2{
     font-size: 15px;
     color: #88859F;
     padding-top: 40px;
-    margin-left: 210px;
+    margin-left: 265px;
+}
+.sp-box2{
+    color: #707070;
 }
 .form-contact{
     width: 100%;
