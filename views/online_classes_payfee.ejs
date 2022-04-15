@@ -33,17 +33,21 @@
                     <b class="item__2">Unit Price</b>
                     <b class="item__3">Sub Total</b>
                 </div>
-                <div class="basket-item2 flexbox">
-                    <p >Safeguarding & Protecting Children (Online Classroom) - 35744</p>
-                    <p >$33.00</p>
-                    <p >$33.00</p>
+                <div class="basket-item2 ">
+                    <div class="basket-product flexbox">
+                        <p >Safeguarding & Protecting Children (Online Classroom) - 35744</p>
+                        <p >$33.00</p>
+                        <p >$33.00</p>
+                    </div>
+                    <img src="images/imgs_payfee/clear.png" alt="clear">
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
 
         <!-- start: summary -->
-        <div class="content__summary content-font">
-            <div class="summary-item">
+        <div class="content__summary ">
+            <div class="summary-item content-font">
                 <h2>Summary</h2>
                 <div class="summary-itembox ">
                     <div class="summary-oclass flexbox between">
@@ -56,8 +60,11 @@
                     </div>
                     <div class="summary-discount flexbox between">
                         <label><b> Discount code</b></label>
-                        <input type="text" required>
-                        <button type="submit">APPLY</button>
+                        <div class="posi">
+                            <input type="text" required>
+                            <img src="images/imgs_payfee/tick.png" class="tick js-tick" alt="ok">
+                        </div>
+                        <button class="js-tick-submit" type="submit">VERIFICATION</button>
                     </div >
                     <div class="summary-total flexbox between">
                         <p><b> Total price:</b></p>
@@ -66,8 +73,8 @@
                 </div>
             </div>
             <div class="summary-submit">
+                <button type="submit" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
                 <button type="submit"><b> CANCEL</b></button>
-                <button type="submit" id="js-submit"><b> SUBMIT</b></button>
             </div>
         </div>
     </div>
@@ -77,11 +84,11 @@
 </div>
 <div class="modal js-modal">
     <div class="modal-container js-modal-container">
-        <div class="modal-close ">
-            <i class="ti-close js-modal-close"></i>
+        <div class="modal-close js-modal-close">
+            <img src="images/imgs_payfee/close.png"  alt="close">
         </div>
         <div class="modal-body">
-            <i class="ti-check check"></i>
+            <img src="images/imgs_payfee/check.png" class="check" alt="check">
             <p><b>Your booking is successful. Please, check email for bill.</b></p>
         </div>
     </div>
@@ -110,6 +117,14 @@
         event.stopPropagation()
     })
 
+
+//    hiển thị tick
+    const tickSubmit = document.querySelector('.js-tick-submit');
+    const tick = document.querySelector('.js-tick');
+    function showTick(){
+        tick.classList.add('open')
+    }
+    tickSubmit.addEventListener('click', showTick)
 </script>
 </body>
 </html>
