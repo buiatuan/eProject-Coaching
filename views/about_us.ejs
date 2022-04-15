@@ -1,13 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
+    <title>About us E.Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css"/>
+    <%- include("stylesheet.ejs") %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+        });
+    </script>  
 </head>
-<body>
-
+public
+<div class="app">
+    <%- include("head.ejs") %>
+    <div class="container">
+        <!--banner-->
+        <div class="banner">
+            <h1>We're here for thesection</h1>
+            <p>Whatever your role - coach, facilitator, instructor, leader, teacher<br> or trainer - if you’re helping people to be active <br> and improve, we’re here for youontent
+        </div>
+        <!--POTENTIALS Content -->
+        <article class="content">
+            <div class="title">
+                <h4>MAXIMIZE YOUR POTENTIALS</h4>
+                <h3>Learn the sectitleto Life Success</h3>
+                <p>We develop titlering coaches to bring #GreatCoaching to the lives of millions</p>
+            </div>
+            <div class="content_body row">
+                <div class="col-lg-3 block">
+                    <div class="feature-item"> 
+                        <div class="feature-icon">
+                            <img src="/images/imgs_about_us/Expert_Teacher.png" alt="Expert_Teacher"/>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Expert Teacher</h4>
+                            <p>Always bring you the latest
+                                and most up-to-date knowledge 
+                                and skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 block">
+                    <div class="feature-item"> 
+                        <div class="feature-icon">
+                            <img src="/images/imgs_about_us/Self_Development.png" alt="Self_Development"/>
+                        </div>
+                        <div class="feature-text"> 
+                            <h4>Self Development</h4>
+                            <p>Develop skills for career of various majors including computer.</p>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 block">
+                    <div class="feature-item"> 
+                        <div class="feature-icon">
+                            <img src="/images/imgs_about_us/Remote_Learning.png" alt="Remote_Learning"/>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Remote Learning</h4>
+                            <p>Learn anywhere, anytime. Flexible time, suitable for busy people.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-3 block">
+                    <div class="feature-item"> 
+                        <div class="feature-icon">
+                            <img src="/images/imgs_about_us/Life_Time_Support.png" alt="Life_Time_Support"/>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Life Time Support</h4>
+                            <p>24/7 support. Ready to answer all questions when learning online.</p> 
+                        </div>
+                    </div> 
+                </div>
+                <!-- ABOUT US CONTENT -->
+                <div class="introduction">
+                        <p class="video">
+                            <video width="1153px" height="649px" autoplay muted>
+                                <source src="/media/Become_A_Life_Coach_with_ Christine_Hassler.mp4">
+                            </video>
+                        </p>
+                        <h3>Our Impact</h3>
+                        <p>While reaching and developing coaches is essential to our work, we do so much more behind the scenes. We collaborate with organisations and pool their resources to make lasting improvements to coaching in the UK - from grass-roots through to elite performance levels. We inform Government on policy that supports coaches to have a positive impact on society. And we develop learning that helps coaches support the needs and dreams of the people they coach.</p>
+                </div>
+                <!-- Customer Data -->
+                <div class="number_count">
+                    <div class="col-lg-3 block">
+                        <span class="counter">5000</span>
+                        <p class="a">Instructors</p>
+                    </div>
+                    <div class="col-lg-3 block">
+                        <span class="counter">6000</span>
+                        <p class="b">Total Courses</p> 
+                    </div>
+                    <div class="col-lg-3 block">
+                        <span class="counter">7000</span>
+                        <p class="c">Registered Enrolls</p> 
+                    </div>
+                    <div class="col-lg-3 block">
+                        <span class="counter">100</span>%
+                        <p class="d">Satisfaction Rate</p> 
+                    </div>
+                </div>
+                 <!-- Our Team -->
+                <div class="team">
+                <div class="col-lg-3 block1 text">
+                        <h4>Harish Ham</h4>
+                        <p>CEO</p>
+                </div>    
+                <div class="col-lg-3 block2 text">
+                        <h4>Tanvir Hasan</h4>
+                        <p>Doctor</p>
+                </div>
+                <div class="col-lg-3 block3 text">
+                        <h4>Mikele John</h4>
+                        <p>Doctor of Psychology</p>
+                </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <%- include("footer.ejs") %>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> 
 </body>
-</html>
+</htmls

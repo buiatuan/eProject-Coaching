@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 300;
+    font-family: 'Noto Sans Oriya', sans-serif;
+    text-align: left;
+    color: #3f3a64;
+}
+
+.container{
+    width: 1440px;
+    float: none;
+    margin-left: 240px;
+}
+
+.container .banner{
+    width: 100%;
+    height: 515px;
+    background-color: #f7f5f4;
+}
+.container .banner h1{
+    font-size: 80px;
+    color: #3abab3;
+    text-align: center;
+    padding:100px 0 30px 0  ;
+}
+
+.container .banner p{
+    font-size: 40px;
+    color: #3f3a64;
+    text-align: center;
+}
+
+.content{
+    width: 1153px;
+    float: none;
+}
+.content .title{
+    width: 100%;
+    text-align: center; 
+    margin-left: 144px;
+    margin-right: 144px;
+}
+
+.content .title h4{
+    color: #3abab3;
+    margin-top: 65px;
+    margin-bottom:15PX;
+}
+
+.content .title h3{
+    color: #3f3a64;
+    margin-bottom:15px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.content .content_body{
+    width: 100%;
+    float: left;
+    margin-top: 48px;
+    margin-left:120px;
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content .content_body .col-lg-3 {
+    float: left;
+    width: 25%;
+    padding: 0 2px 0 12px;
+    text-align:center;
+}
+
+.feature-item .feature-text h4{
+    font-size: 20px;
+    color: #3f3a64;     
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+
+.block p{
+    font-size: 20px;
+    color: #3f3a64;  
+}
+
+
+.feature-item:hover .feature-icon {
+    transform: translateY(-10px);
+}
+.feature-item:hover h4 {
+    color: #20ad96;
+}
+.block .feature-item h4 {
+    margin-bottom: 10px;
+    transition: .4s;
+}
+ .feature-icon img {
+    font-size: 70px;
+    line-height: 70px;
+    color: #20ad96;
+    transition: .4s;
+    width: 63px;
+    height: 73px;
+}
+
+
+.content .introduction{
+    width: 100%;
+    float: left;
+
+}
+
+.content .introduction .video{
+    margin-left: 19px;
+    margin-top: 60px;
+    
+}
+
+.content .introduction h3{
+    font-size: 40px;
+    color: #3f3a64;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content .introduction p{
+    width:80%;
+    font-size: 20px;
+    color: #3f3a64;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 110px;
+}  
+
+.number_count{
+    width:1153px;
+    height: 250px;
+    float: left; 
+    margin-top: 60px;
+    background: rgba(34, 83, 111, 0.8 );
+    border-radius: 12px;
+    margin-left: 20px
+}
+
+.counter {
+    font-size: 80px;
+    font-weight: 700;
+    color: #3abab3;
+    
+}
+
+.block {
+    margin-top: 60px;
+}
+
+.block .a{
+     display: block;
+     color: #ffffff;
+     font-weight: 600;
+     float:left;
+     margin-left: 40px;
+    
+}
+.block .b {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    float:left;
+    margin-left: 45px;
+   
+}
+.block .c {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    float:left;
+    margin-left: 45px;
+   
+}
+.block .d {
+     display: block;
+     color: #ffffff;
+     font-weight: 600;
+     margin-left: 25px;
+   
+}
+
+
+.content .content_body .team {
+    width:100%;
+    float: left; 
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.content .content_body .team .block1 {
+    width: 349px;
+    height: 273px;
+    background-image: url("/images/imgs_about_us/Harish_Ham.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;    
+    margin: 0px 51px 0 20px
+
+    
+}
+
+.content .content_body .team .block2 {
+    width: 349px;
+    height: 273px;
+    background-image: url("/images/imgs_about_us/Tanvir_Hasan.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 51px 0 0px
+    
+}
+
+.content .content_body .team .block3 {
+    width: 349px;
+    height: 273px;
+    background-image: url("/images/imgs_about_us/Mikele_John.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.team .text h4{
+    width: 225px;
+    height: 78px;
+    background-color:#ffffff; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 12px 12px 0 0;
+    margin-top: 200px;
+    margin-left: 50px;
+    padding: 45px 0px 0 10px;
+}
+
+.team .text p{
+    width: 225px;
+    height: 78px;
+    background-color:#ffffff; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 12px 12px 0 0;
+    margin-top: -10px;
+    margin-left: 50px;
+    padding: 0 0 0 15px;
+}
+
+
+
+
+
