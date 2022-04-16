@@ -5,7 +5,7 @@
     margin-bottom: 40px;
 }
 .content-name:hover{
-    background-color: rgba(97,183,178, 0.8);
+    background-color: rgb(27, 109, 133);
     transition: 0.5s;
 }
 .input {
@@ -18,7 +18,7 @@
     height: 2px;
     position: absolute;
     top: 48px;
-    left: -165px;
+    left: -60px;
     right: 207px;
     background: #3abab3;
 }

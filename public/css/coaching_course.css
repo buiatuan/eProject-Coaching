@@ -29,20 +29,21 @@ body{
 
 }
 .content-name {
-    width: 26%;
-    height: 80px;
+    width: 469px;
+    height: 98px;
+
     background-color: #3ABAB3;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 130px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .content-name h3{
     margin: 0;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 .product-details{
@@ -50,38 +51,39 @@ body{
 
 }
 .product-details img{
-    width:382px ;
+    width:372px ;
     height:407px ;
-   margin-left: 142px;
+   margin-left: 146px;
     margin-top: 75px;
 }
 .text h5{
-    padding: 120px 0 30px 50px;
+    padding: 120px 0 10px 43px;
     font-size: 20px;
     line-height: 27px;
     font-weight:600;
     color: #3ABAB3;
 }
 .text h3{
-    padding-left: 50px;
+    padding-left: 43px;
     font-size: 20px;
     line-height: 27px;
     font-weight:600;
     color: #3F3A64;
+    padding-top: 10px;
 }
 .text p{
-    width: 699px;
+    width: 775px;
     font-size: 20px;
     line-height: 27px;
     padding-top: 35px;
-    padding-left: 50px;
+    padding-left: 43px;
 }
 .product-details button{
     width: 165px;
     height: 50px;
-    margin-top: 40px;
-    margin-left: 430px;
-    border-radius: 10px;
+    margin-top: 56px;
+    margin-left: 560px;
+    border-radius: 12px;
     padding: 0 50px 0 50px;
     color: white;
     background-color: #61B7B2;
@@ -102,7 +104,7 @@ body{
     height: 2px;
     position: absolute;
     top: -2px;
-    left: 487px;
+    left: 590px;
     right: 137px;
     background: #3abab3;
 }
@@ -181,11 +183,11 @@ body{
 
 /*onclick*/
 .content-name:hover{
-    background-color: rgba(97,183,178, 0.8);
+    background-color: rgb(27, 109, 133);
     transition: 0.5s;
 }
 .content1-name:hover{
-    background-color: rgba(97,183,178, 0.8);
+    background-color: rgba(97, 183, 178, 0.8);
     transition: 0.5s;
 }
 .red{

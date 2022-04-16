@@ -81,6 +81,7 @@ p{
     width: 80%;
     border-radius: 8px;
     padding: 10px;
+    border: none;
 }
 .link{
     text-align: center;
@@ -105,6 +106,7 @@ p{
     border-radius: 10px;
     font-size: 18px;
     margin-left: 22px;
+    border: none;
 }
 .btn-facebook{
     background-color: #0F80F0;
@@ -114,6 +116,7 @@ p{
     border-radius: 10px;
     font-size: 18px;
     margin-right: 22px;
+    border: none;
 }
 ::placeholder{
     color: #9AAAB4;

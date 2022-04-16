@@ -73,3 +73,8 @@ app.get('/product-details', function (req, res) {
 app.get('/online-class-payfee', function (req, res) {
     res.render("online_classes_payfee");
 });
+
+// blog detail
+app.get('/blog-detail', function (req, res) {
+    res.render("blog_detail");
+});
