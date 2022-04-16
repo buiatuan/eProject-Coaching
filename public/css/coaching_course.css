@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -28,13 +29,13 @@ body{
 
 }
 .content-name {
-    width: 30%;
+    width: 26%;
     height: 80px;
     background-color: #3ABAB3;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 116px;
+    margin-left: 130px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -51,7 +52,7 @@ body{
 .product-details img{
     width:382px ;
     height:407px ;
-   margin-left: 180px;
+   margin-left: 142px;
     margin-top: 75px;
 }
 .text h5{
@@ -101,7 +102,7 @@ body{
     height: 2px;
     position: absolute;
     top: -2px;
-    left: 492px;
+    left: 487px;
     right: 137px;
     background: #3abab3;
 }
@@ -118,20 +119,26 @@ body{
 }
 .filter button{
     margin-top: -40px;
-    margin-left: 465px;
+    margin-left: 557px;
     color: #61B7B2;
     line-height: 20px;
     padding: 0;
     background: none;
     border: none;
 }
+.form-check-input{
+    display: inline-block;
+    font-size: 25px;
+    height: 23px;
+    width: 48px;
+    border-bottom: 10px ;
+}
 .checkbox33{
-    margin-left: -27px;
+    margin-left: -11px;
+
 }
 .checkbox33 .types{
     display: flex;
-
-
 }
 .checkbox33 .range{
     display: flex;

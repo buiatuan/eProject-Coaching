@@ -6,14 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
     <%- include("stylesheet.ejs") %>
     <link rel="stylesheet" href="/css/coaching_course.css">
 
 </head>
 <body>
 <%- include("head.ejs") %>
-<div class="content-top">
+
+<div  class="content-top">
     <div class="container">
         <div class="content-top-col">
             <h1>We’re here for the COACH</h1>
@@ -32,7 +33,6 @@
                  color: #ffff;" class="fa-solid fa-angle-right"></i>
             </span>
         </div>
-
         <div id="show" class="sidebar">
             <div class="filter">
                 <img style="width: 40px;height: 40px" src="images/imgs_coaching_course/icon_filter.png"/>
@@ -44,29 +44,29 @@
                     <p style="color: #3F3A64">Course types</p>
                     <div class="checkbox333">
                         <div class="form-check form-check-inline">
-                            <input style="font-size: 25px " class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <input  class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                             <label style="font-size:20px;font-weight: 100;margin-top: 7px;color: #3F3A64" class="form-check-label" for="inlineCheckbox1">Qualifications (5)</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input style="font-size: 25px " class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <input  class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                             <label style="font-size:20px;font-weight: 100;margin-top: 7px;color: #3F3A64" class="form-check-label" for="inlineCheckbox2">Online Classes (26)</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input style="font-size: 25px " class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
                             <label style="font-size:20px;font-weight: 100;margin-top: 7px;color: #3F3A64" class="form-check-label" for="inlineCheckbox3">Workshops (19) </label>
                         </div>
                     </div>
                 </div>
                 <div class="range">
                     <p style="color: #3F3A64">Price Range</p>
-                    <p style="font-weight: 100;font-size: 20px;margin-top: 55px;padding-right: 15px;color: #3F3A64;margin-left: 160px">From</p>
+                    <p style="font-weight: 100;font-size: 20px;margin-top: 55px;padding-right: 15px;color: #3F3A64;margin-left: 185px">From</p>
                     <input type="text" id="clearInput" placeholder="$" style="width: 167px;height: 40px;margin-top: 45px;border-radius: 8px;padding-left: 13px;font-size: 20px;padding-top: 6px">
                     <p style="font-weight: 100;font-size: 20px;margin-top: 55px;padding-right: 15px;color: #3F3A64">To</p>
                     <input type="text" id="clearInput1" placeholder="$" style="width: 167px;height: 40px;margin-top: 45px;border-radius: 8px;padding-left: 13px;font-size: 20px;padding-top: 6px">
                 </div>
                 <div class="only">
                     <p style="color: #3F3A64">Show Bookable Only</p>
-                    <label class="switch">
+                    <label style="margin-left: 80px" class="switch">
                         <input type="checkbox" id="togBtn">
                         <div class="slider round">
                             <span class="on">ON</span>
@@ -74,7 +74,7 @@
                         </div>
                     </label>
                     <p style="font-weight: 600;font-size: 20px;margin-top: 55px;padding-right: 15px;margin-left: 170px">Date Range</p>
-                    <input type="text" id="clearInput3" placeholder="All" style="width: 240px;height: 40px;margin-top: 45px;border-radius: 8px;font-size: 20px;padding-top: 10px;padding-left: 8px">
+                    <input type="text" id="clearInput3" placeholder="All" style="width: 240px;height: 40px;margin-top: 45px;border-radius: 8px;font-size: 20px;padding-top: 6px;padding-left: 13px">
                 </div>
             </div>
         </div>
@@ -127,16 +127,17 @@
 
 <%- include("footer.ejs") %>
 <script>
-    var a;
+    var a = 0;
     function show_hide(){
-        if(a==1)
+        console.log("la");
+        if(a==0)
         {
             document.getElementById("show").style.display="inline";
-            return a=0;
+            return a=1;
         }
         else {
             document.getElementById("show").style.display="none";
-            return a=1;
+            return a=0;
         }
     }
    // xóa checked
