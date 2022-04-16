@@ -47,7 +47,6 @@
 .sp-box2{
     font-weight: 600;
 }
-
 .form{
     display: flex;
 }
@@ -79,6 +78,12 @@ label{
     margin-left: 13px;
     outline: none;
 }
+input.form-contact-yname1{
+    font-size: 30px;
+}
+input.form-contact-yname2{
+    font-size: 30px;
+}
 .form-yname{
     width: 100%;
 }
@@ -95,12 +100,18 @@ label{
     border-radius: 12px;
     outline: none;
 }
+input.form-contact-email{
+    font-size: 30px;
+}
 .form-contact-subject{
     width: 1150px;
     height: 85px;
     margin-left: 146px;
     border-radius: 12px;
     outline: none;
+}
+input.form-contact-subject{
+    font-size: 30px;
 }
 .form-label-ms{
     margin-left: 154px;
@@ -118,6 +129,8 @@ label{
     margin-left: 146px;
     border-radius: 12px;
     outline: none;
+    font-size: 30px;
+    color: #D0D1D3;
 }
 .form-label-msg{
     margin-left: 154px;
@@ -131,6 +144,9 @@ label{
     border-radius: 12px;
     margin-bottom: 74px;
     outline: none;
+}
+textarea.form-textarea{
+    font-size: 30px;
 }
 .btn-contact-send{
     background-color: #61B7B2;
