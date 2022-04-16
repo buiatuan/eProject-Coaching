@@ -3,49 +3,57 @@
 }
 .container{
     width: 1440px;
+    margin: 0 auto;
 }
 .img-contact img{
     width: 100%;
 }
 .btn-contact{
     background-color: #3ABAB3;
-    width: 25%;
-    padding: 25px;
-    margin-left: 265px;
-    font-size: 27px;
-    border-radius: 5px;
+    width: 469px;
+    height: 98px;
+    margin-left: 154px;
+    font-size: 25px;
+    border: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     color: #ffffff;
     margin-top: 1px;
-    border: none;
+    margin-bottom: 100px;
+}
+.box-1 h3{
+    font-weight: 600;
+    font-size: 60px;
+    margin-left: 154px;
+    margin-right: 235px;
+    margin-top: -7px;
+    color: #3F3A64;
+    float: left;
 }
 .contact-us{
     display: flex;
     justify-content: center;
-    padding: 30px;
-}
-.box-1{
-    font-weight: 600;
-    font-size: 50px;
-    color: #3F3A64;
-    margin-top: 30px;
-    margin-right: 50px;
 }
 .box-2{
-    font-size: 15px;
-    color: #88859F;
-    padding-top: 40px;
-    margin-left: 265px;
+    float: right;
+    margin-right: 254px;
+    font-size: 20px;
+    color: #3F3A64;
+    display: flex;
+}
+.contact-us{
+    margin-bottom: 5px;
 }
 .sp-box2{
-    color: #707070;
+    font-weight: 600;
 }
-.form-contact{
-    width: 100%;
-    outline: none;
-    border-radius: 10px;
-    border: 3px solid #C9C9C9;
-    padding: 15px;
-    margin-bottom: 20px;
+
+.form{
+    display: flex;
+}
+.form-yname{
+    display: flex;
+    justify-content: center;
 }
 label{
     color: #3F3A64;
@@ -53,68 +61,86 @@ label{
 .text-red{
     color: red;
 }
-.form-yname{
-    display: flex;
-    justify-content: center;
-    margin-bottom: -10px;
-}
 .form-label{
-    margin-left: 265px;
+    margin-left: 154px;
+    margin-bottom: 27px;
+}
+.form-contact-yname1{
+    width: 561px;
+    height: 85px;
+    border-radius: 12px;
+    margin-right: 13px;
+    outline: none;
+}
+.form-contact-yname2{
+    width: 561px;
+    height: 85px;
+    border-radius: 12px;
+    margin-left: 13px;
+    outline: none;
+}
+.form-yname{
+    width: 100%;
 }
 .form-yname1{
-    width: 33.33%;
-    margin-left: 245px;
-    padding: 10px;
+    margin-left: 146px;
 }
 .form-yname2{
-    width: 33.33%;
-    margin-right: 215px;
-    padding: 10px;
+    margin-right: 146px;
 }
-.form-mail-subj{
-    width: 65.50%;
-    margin-left: 265px;
+.form-contact-email{
+    width: 1150px;
+    height: 85px;
+    margin-left: 146px;
+    border-radius: 12px;
+    outline: none;
+}
+.form-contact-subject{
+    width: 1150px;
+    height: 85px;
+    margin-left: 146px;
+    border-radius: 12px;
+    outline: none;
 }
 .form-label-ms{
-    margin-bottom: 10px;
+    margin-left: 154px;
+    margin-top: 27px;
+    margin-bottom: 25px;
 }
-.form-category{
-    width: 90%;
-    margin-left: 265px;
-    margin-bottom: 10px;
-}
-.form-ctgr{
-    margin-bottom: 10px;
+.form-label-ctgr{
+    margin-left: 154px;
+    margin-top: 27px;
+    margin-bottom: 25px;
 }
 .form-select-ctgr{
-    width: 73%;
-    padding: 20px;
-    border-radius: 10px;
-    border: 3px solid #C9C9C9;
-    margin-bottom: 10px;
-}
-.form-message{
-    width: 90%;
-    margin-left: 265px;
+    width: 1150px;
+    height: 85px;
+    margin-left: 146px;
+    border-radius: 12px;
+    outline: none;
 }
 .form-label-msg{
-    margin-bottom: 10px;
+    margin-left: 154px;
+    margin-top: 27px;
+    margin-bottom: 25px;
 }
 .form-textarea{
-    width: 73%;
-    border-radius: 10px;
-    border: 3px solid #C9C9C9;
+    width: 1150px;
+    height: 327px;
+    margin-left: 146px;
+    border-radius: 12px;
+    margin-bottom: 74px;
+    outline: none;
 }
 .btn-contact-send{
     background-color: #61B7B2;
     color: #ffffff;
-    padding: 10px;
-    width: 10%;
-    border-radius: 15px;
+    width: 165px;
+    height: 50px;
+    border-radius: 12px;
     border: 1px solid #61B7B2;
-    margin-left: 1070px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-left: 1135px;
+    margin-bottom: 54px;
 }
 button[type=submit]:hover {
     background-color: #1b6d85;
