@@ -12,7 +12,8 @@
 }
 .content-top-col{
     text-align: center;
-    padding: 0 50px;
+    width: 1150px;
+    margin: 0 auto;
 }
 .content-top-col h1{
     font-size: 70px;
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 145px;
+    margin-left: 140px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }

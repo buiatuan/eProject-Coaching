@@ -6,7 +6,9 @@
 .container{
     width: 1440px;
     margin: 0 auto;
+    padding: 0;
 }
+
 
 .section{
     display: block;
@@ -15,10 +17,11 @@
 /*banner-top*/
 .banner-top{
     width: 100%;
+    padding: 0;
     position: relative;
 }
 .banner-top__img{
-    width: 100%;
+    width: 100% !important;
 }
 .banner-top__text{
     text-align: center;
@@ -29,7 +32,7 @@
 }
 .banner-top__heading{
     color: #ffffff;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 400;
 }
 .banner-top__btn{
@@ -38,15 +41,15 @@
     align-items: center;
     margin-top: 30px;
 }
-a.banner-top__btn--item{
+.banner-top__btn--item{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 400;
     color: #ffffff;
     display: block;
-    min-width: 120px;
-    padding: 12px;
+    min-width: 150px;
+    padding: 13px 30px;
     margin: 0 16px;
     border-radius: 6px;
     border: 2px solid #ffffff;
@@ -72,7 +75,7 @@ a.banner-top__btn--item{
 }
 .feature{
     width: 100%;
-    margin: 100px 0;
+    margin: 40px 0;
     float: left;
 }
 .feature-top{
@@ -94,8 +97,8 @@ a.banner-top__btn--item{
 .feature-main{
     display: flex;
     justify-content: space-around;
-    padding: 0 100px;
-    margin-top: 30px;
+    padding: 0 140px;
+    margin-top: 15px;
 }
 .feature-item{
     text-align: center;
@@ -123,14 +126,16 @@ a.banner-top__btn--item{
 /*section-about-us*/
 .section-about-us{
     width: 100%;
-    padding: 0 120px;
+    padding: 0 150px;
     margin-top: 100px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-
+.row .section-about-us-img{
+    padding: 25px 28px;
+}
 .section-about-us-img img{
     width: 100%;
     box-shadow: 0 0 5px #cccccc;
@@ -144,22 +149,24 @@ a.banner-top__btn--item{
     word-spacing: 2px;
 }
 .section-about-us-content--text h4{
-    font-size: 18px;
+    font-size: 20px;
     color: #61B7B2;
     font-weight: 500;
 }
 .section-about-us-content--text h3{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 46px;
 }
 .section-about-us-content--text p{
-    font-size: 14px;
+    font-size: 16px;
 }
 .section-about-us-content--text ul{
     list-style: none;
     padding-left: 0;
     margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .section-about-us-content--text ul li{
     padding: 5px ;
@@ -173,7 +180,7 @@ a.banner-top__btn--item{
     display: block;
     float: right;
     margin-top: 30px;
-    padding: 10px;
+    padding: 15px 35px;
     text-decoration: none;
     color: #ffffff;
     border-radius: 6px;
@@ -194,50 +201,50 @@ a.banner-top__btn--item{
 }
 .popular-course__content{
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
     display: block;
 }
 .popular-course__content h4{
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     color: #61B7B2;
     font-weight: 700;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
 .popular-course__content h3{
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 400;
     margin-top: 14px;
 }
 .popular-course__content p{
-    font-size: 14px;
+    font-size: 20px;
 }
 .popular-course__list{
     width: 100%;
-    padding: 0 20px;
+    padding: 0 90px;
     display: flex;
+    margin-top: 15px;
 }
 
 .popular-course__item{
     width: 100%;
     margin-top: 50px;
-    padding: 0 30px;
+    padding: 0 10px;
 }
 .popular-course__item-row{
     background-color: #ffffff;
     box-shadow: 0 0 5px #cccccc;
-    padding-bottom: 12px;
+    padding-bottom: 25px;
     border-radius: 12px;
     overflow: hidden;
-    height: 510px;
 }
 .popular-course__item--icon img {
     width: 100%;
 }
 .popular-course__item--text{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 5px 20px;
     position: relative;
 }
@@ -257,7 +264,7 @@ a.banner-top__btn--item{
 }
 .popular-course__item--text h4:hover a{
     text-decoration: none;
-    color: #61B7B2;
+    color: #378886;
     transition: 0.4s;
 }
 
@@ -267,29 +274,31 @@ a.banner-top__btn--item{
     color: #61B7B2;
     position: absolute;
     right: 30px;
+    bottom: 30px;
 }
 .popular-course__item--text p{
-    margin: 62px 0 0 100px;
+    margin: 82px 0 0 110px;
 }
 .popular-course__text{
     display: flex;
-    margin: 60px auto;
-    width: 40%;
+    margin: 70px auto;
+    width: 50%;
     text-align: center;
 }
 .popular-course__text p{
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
 }
 .popular-course__text p a{
     text-decoration: underline;
+    margin-bottom: 0;
 }
 
 /*statistical*/
 .statistical{
     width: 100%;
-    margin-top: 50px;
-    padding: 0 50px;
+    margin-top: 65px;
+    padding: 0 100px;
 }
 .statistical-heading{
     width: 70%;
@@ -299,7 +308,7 @@ a.banner-top__btn--item{
     padding-left: 54px;
 }
 .statistical-heading h4{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #61B7B2;
     text-transform: uppercase;
@@ -314,6 +323,7 @@ a.banner-top__btn--item{
     display: flex;
     justify-content: center;
 }
+
 .statistical-item--data{
     font-size: 60px;
     color: #61B7B2;
@@ -341,7 +351,7 @@ a.banner-top__btn--item{
     color: #ffffff;
     display: block;
     float: right;
-    padding: 8px 40px;
+    padding: 8px 55px;
     background-color: #61B7B2;
     margin-right: 24px;
     border-radius: 8px;
@@ -349,13 +359,14 @@ a.banner-top__btn--item{
 .popular-course__item--btn:hover{
     text-decoration: none;
     color: #ffffff;
-    background-color: rgba(97,183,178, 0.8);
+    transition: 0.3s;
+    background-color: #378886;
 }
 
 /*subscribe-form*/
 .subscribe-form{
-    padding: 0 50px;
-    margin: 60px;
+    padding: 0 71px;
+    margin: 85px;
 }
 .subscribe-form-row{
     display: flex;
@@ -363,18 +374,17 @@ a.banner-top__btn--item{
     align-items: center;
 }
 .subscribe-form__text h4{
-    font-size: 17px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     color: #61B7B2;
 }
 .subscribe-form__text h3{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 400;
-    word-spacing: 4px;
 }
 .subscribe-form--main{
-    width: 50%;
+    width: 46%;
     border: 2px solid rgba(112,112,112,0.6);
     border-radius: 10px;
 }
@@ -402,6 +412,6 @@ a.banner-top__btn--item{
     font-size: 12px;
 }
 .subscribe-form--main-submit:hover{
-    background-color: rgba(97,183,178, 0.8);
+    background-color: #378886;
     transition: 0.5s;
 }

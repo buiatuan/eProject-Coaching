@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Classes Pay fee </title>
+    <link rel="stylesheet" href="vendors/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/online_classes_payfee.css">
+    <%- include("stylesheet.ejs") %>
+</head>
+<body>
+<%- include("head.ejs") %>
+<section id="content">
+    <div class="container">
+        <div class="content__heading flexbox">
+            <div class="content__blog-btn">
+                <p> ONLINE CLASSES</p>
+            </div>
+            <div class="content__text">
+                <p>ONLINE CLASSES <span>(PAY FEE)</span></p>
+                <p>Understand Connect, Thrive: Knowing Your People</p>
+            </div>
+        </div>
+
+        <!-- start: basket -->
+        <div class="content__basket content-font">
+            <div class="basket-item ">
+                <h2>Basket</h2>
+                <div class="basket-item1 flexbox">
+                    <b class="item__1">Product</b>
+                    <b class="item__2">Unit Price</b>
+                    <b class="item__3">Sub Total</b>
+                </div>
+                <div class="basket-item2 ">
+                    <div class="basket-product flexbox">
+                        <p >Safeguarding & Protecting Children (Online Classroom) - 35744</p>
+                        <p >$33.00</p>
+                        <p >$33.00</p>
+                    </div>
+                    <img src="images/imgs_payfee/clear.png" alt="clear">
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start: summary -->
+        <div class="content__summary ">
+            <div class="summary-item content-font">
+                <h2>Summary</h2>
+                <div class="summary-itembox ">
+                    <div class="summary-oclass flexbox between">
+                        <p>Safeguarding & Protecting Children (Online Classroom) - 35744</p>
+                        <p style="color: #61B7B2;">$ 120.00</p>
+                    </div>
+                    <div class="summary-vat flexbox between">
+                        <p>Includes VAT:</p>
+                        <p style="color: #61B7B2;">$ 0.00</p>
+                    </div>
+                    <div class="summary-discount flexbox between">
+                        <label><b> Discount code</b></label>
+                        <div class="posi">
+                            <input type="text" required>
+                            <img src="images/imgs_payfee/tick.png" class="tick js-tick" alt="ok">
+                        </div>
+                        <button class="js-tick-submit" type="submit">VERIFICATION</button>
+                    </div >
+                    <div class="summary-total flexbox between">
+                        <p><b> Total price:</b></p>
+                        <p style="color: #61B7B2;">$33.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-submit">
+                <button type="submit" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
+                <button type="submit"><b> CANCEL</b></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- start: modal -->
+</div>
+<div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
+            <img src="images/imgs_payfee/close.png"  alt="close">
+        </div>
+        <div class="modal-body">
+            <img src="images/imgs_payfee/check.png" class="check" alt="check">
+            <p><b>Your booking is successful. Please, check email for bill.</b></p>
+        </div>
+    </div>
+</div>
+<%- include("footer.ejs") %>
+<!--show and hide submit-->
+<script>
+    const submit = document.getElementById('js-submit')
+    const modal = document.querySelector('.js-modal')
+    const modalContainer = document.querySelector('.js-modal-container')
+    const modalClose = document.querySelector('.js-modal-close')
+
+    function showSubmit(){
+        modal.classList.add('open')
+    }
+    function hideSubmit(){
+        modal.classList.remove('open')
+    }
+    submit.addEventListener('click', showSubmit)
+
+    modalClose.addEventListener('click', hideSubmit)
+
+    modal.addEventListener('click', hideSubmit)
+
+    modalContainer.addEventListener('click', function(event){
+        event.stopPropagation()
+    })
+
+
+//    hiển thị tick
+    const tickSubmit = document.querySelector('.js-tick-submit');
+    const tick = document.querySelector('.js-tick');
+    function showTick(){
+        tick.classList.add('open')
+    }
+    tickSubmit.addEventListener('click', showTick)
+</script>
+</body>
+</html>

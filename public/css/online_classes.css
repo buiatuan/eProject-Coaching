@@ -8,3 +8,17 @@
     background-color: rgba(97,183,178, 0.8);
     transition: 0.5s;
 }
+.input {
+    display: flex;
+    position: relative;
+
+}
+.input::after{
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 48px;
+    left: -165px;
+    right: 207px;
+    background: #3abab3;
+}

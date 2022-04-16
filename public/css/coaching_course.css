@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -14,7 +15,7 @@ body{
 }
 .content-top-col{
     text-align: center;
-    padding: 0 50px;
+    padding: 0 80px;
 }
 .content-top-col h1{
     font-size: 70px;
@@ -28,13 +29,13 @@ body{
 
 }
 .content-name {
-    width: 30%;
+    width: 26%;
     height: 80px;
     background-color: #3ABAB3;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 58px;
+    margin-left: 130px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -51,7 +52,7 @@ body{
 .product-details img{
     width:382px ;
     height:407px ;
-   margin-left: 136px;
+   margin-left: 142px;
     margin-top: 75px;
 }
 .text h5{
@@ -93,12 +94,22 @@ body{
 /*filler*/
 .filter {
     display: flex;
+    position: relative;
 
+}
+.filter::after{
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: -2px;
+    left: 487px;
+    right: 137px;
+    background: #3abab3;
 }
 
 .filter img{
 
-    margin-left: 489px;
+    margin-left: 556px;
     margin-top: -60px;
 }
 .filter p{
@@ -108,20 +119,26 @@ body{
 }
 .filter button{
     margin-top: -40px;
-    margin-left: 530px;
+    margin-left: 557px;
     color: #61B7B2;
     line-height: 20px;
     padding: 0;
     background: none;
     border: none;
 }
+.form-check-input{
+    display: inline-block;
+    font-size: 25px;
+    height: 23px;
+    width: 48px;
+    border-bottom: 10px ;
+}
 .checkbox33{
-    margin-left: -85px;
+    margin-left: -11px;
+
 }
 .checkbox33 .types{
     display: flex;
-
-
 }
 .checkbox33 .range{
     display: flex;
@@ -129,6 +146,17 @@ body{
 }
 .checkbox33 .only{
     display: flex;
+    position: relative;
+
+}
+.checkbox33 .only::after{
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 125px;
+    left: 145px;
+    right: 130px;
+    background: #3abab3;
 
 }
 .checkbox33 p{
@@ -137,8 +165,10 @@ body{
     font-size: 25px;
 }
 .checkbox333{
-   margin-top: 60px;
+   margin-top: 50px;
     margin-left: 160px;
+    display: flex;
+
 
 
 }
