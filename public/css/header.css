@@ -53,7 +53,7 @@
 .nav-menu li{
     position: relative;
 }
-.nav-menu .nav-menu__item.nav-menu__item-active a{
+.nav-menu .nav-menu__item.nav-menu__item-active{
     color: #6fbbb7;
 }
 .nav-menu a{

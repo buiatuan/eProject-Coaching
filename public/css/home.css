@@ -355,6 +355,7 @@
     background-color: #61B7B2;
     margin-right: 24px;
     border-radius: 8px;
+    margin-top: 6px;
 }
 .popular-course__item--btn:hover{
     text-decoration: none;
