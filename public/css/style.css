@@ -15,7 +15,7 @@ body{
 .container{
     width: 1440px;
     float: none;
-    margin-left: 240px;
+    margin: 0 auto;
 }
 
 .container .banner{
@@ -38,16 +38,12 @@ body{
 }
 
 .content{
-    width: 1153px;
-    float: none;
-    margin-left: 124px;
-    
+    padding: 0 142px;
 }
 .content .title{
     width: 100%;
     text-align: center;
     margin-left: 6px;
-    
 }
 
 .content .title h4{

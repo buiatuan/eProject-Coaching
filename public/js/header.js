@@ -1,12 +1,10 @@
 
-let itemLinks = document.querySelector('.nav-menu');
+const activePage = window.location.pathname;
+console.log(activePage);
 
-itemLinks.addEventListener("click", (e) =>{
-    console.log(e);
-    let target = e.target;
-    console.log(target)
-    if (target.classList.contains("nav-menu__item")){
-        target.classList.add("nav-menu__item-active");
-        itemLinks.querySelector(".nav-menu__item-active").classList.remove("nav-menu__item-active");
-    }
+const navLinks = document.querySelectorAll(".nav-menu .nav-menu__item").forEach(link =>{
+    console.log(link.href);
+        if(link.href === `http://localhost:2909${activePage}`) {
+            link.classList.add('nav-menu__item-active');
+        }
 })

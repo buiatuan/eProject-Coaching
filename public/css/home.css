@@ -106,7 +106,7 @@
 .feature-item--icon{
     width: 100%;
 }
-.feature-item:hover .feature-item-img {
+.feature-item-img:hover {
     transform: translateY(-15%);
     transition: 0.5s;
     cursor: default;
