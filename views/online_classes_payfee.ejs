@@ -33,13 +33,15 @@
                     <b class="item__2">Unit Price</b>
                     <b class="item__3">Sub Total</b>
                 </div>
-                <div class="basket-item2 ">
+                <div class="basket-item2 js-course">
                     <div class="basket-product flexbox">
                         <p >Safeguarding & Protecting Children (Online Classroom) - 35744</p>
                         <p >$33.00</p>
                         <p >$33.00</p>
                     </div>
-                    <img src="images/imgs_payfee/clear.png" alt="clear">
+                    <div class="delete">
+                        <img src="images/imgs_payfee/clear.png" alt="clear" >
+                    </div>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -61,10 +63,11 @@
                     <div class="summary-discount flexbox between">
                         <label><b> Discount code</b></label>
                         <div class="posi">
-                            <input type="text" required>
+                            <input class="js-value" name="code-discount" type="text"/>
                             <img src="images/imgs_payfee/tick.png" class="tick js-tick" alt="ok">
+                            <img src="images/imgs_payfee/clear.png" class="error js-error" alt="error">
                         </div>
-                        <button class="js-tick-submit" type="submit">VERIFICATION</button>
+                        <button onclick="check()" type="button" value="Submit">VERIFICATION</button>
                     </div >
                     <div class="summary-total flexbox between">
                         <p><b> Total price:</b></p>
@@ -73,8 +76,8 @@
                 </div>
             </div>
             <div class="summary-submit">
-                <button type="submit" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
-                <button type="submit"><b> CANCEL</b></button>
+                <button type="button" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
+                <button type="button"><b> CANCEL</b></button>
             </div>
         </div>
     </div>
@@ -120,12 +123,43 @@
 
 
 //    hiển thị tick
-    const tickSubmit = document.querySelector('.js-tick-submit');
-    const tick = document.querySelector('.js-tick');
-    function showTick(){
-        tick.classList.add('open')
+    function check(e) {
+        var tick = document.querySelector('.js-tick');
+        var error = document.querySelector('.js-error');
+        var valueInput = document.querySelector('.js-value').value;
+
+        function showTick() {
+            tick.classList.add('open');
+            error.classList.remove('open');
+        }
+
+        //  ẩn stick
+        function showError() {
+            tick.classList.remove('open');
+            error.classList.add('open');
+
+        }
+
+        if (valueInput == 12345) {
+            showTick();
+        } else {
+            showError();
+        }
     }
-    tickSubmit.addEventListener('click', showTick)
+
+    //delele
+
+
+        var course = document.querySelector('.js-course');
+        var deleteItem = document.querySelector('.delete');
+            deleteItem.addEventListener('click',function(event){
+                var cartDelete = event.target;
+                var cartItem = cartDelete.parentElement.parentElement;
+                cartItem.remove();
+            })
+
 </script>
+
+
 </body>
 </html>
