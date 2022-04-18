@@ -24,6 +24,7 @@ body{
     background-image: url("/images/imgs_blog_detail/banner.png"); 
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -45px;
 }
 
 .container .banner h1{

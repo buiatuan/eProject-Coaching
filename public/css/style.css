@@ -14,8 +14,7 @@ body{
 
 .container{
     width: 1440px;
-    float: none;
-    margin-left: 240px;
+    margin: none;
 }
 
 .container .banner{
