@@ -1,6 +1,15 @@
 :root{
     --color: #20ad96;
 }
+.clear{
+    clear: both;
+}
+p{
+    margin: 0 !important;
+}
+#content .main h2,h3{
+    color: #3F3A64;
+}
 img{
     width: 100%;
 }
@@ -10,47 +19,180 @@ img{
     margin-right: auto;
     float: none;
 }
-#content .container{
-    padding: 0 140px;
-}
 #content .content__banner{
-
+    background: url('../images/imgs_blog/banner.png') no-repeat;
     margin: 0 30px;
+    position: relative;
 }
-#content .content__blog-btn{
-    background-color: var(--color);
+#content .banner-content{
+    position: absolute;
+    top: 110px;
+    right: 0;
+    left: 0;
     color: #fff;
-    border-radius: 10px;
-    width: 469px;
-    height: 98px;
-    margin-bottom: 100px;
-}
-#content .content__blog-btn p{
-    font-size: 25px;
-    line-height: 98px;
+    font-size: 80px;
     text-align: center;
 }
-#content .content-list1{
+#content .banner-content h2{
+    font-size: 80px;
+}
+#content .container {
+    padding: 0 140px;
+    margin-top: 86px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.main{
+    width: 718px;
+    float: left;
+}
+#content .main .main-item{
+    box-shadow: 0 0 5px #888;
+    border-radius: 12px;
+    margin-bottom: 74px;
+}
+#content .main .main-item p{
+    font-size: 18px;
+    color: #3F3A64;
+}#content .main-item .item-text{
+    padding: 30px 30px 46px;
+    position: relative;
+ }
+#content .main-item .item-text .item-text__da{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
-    font-size: 25px;
+}
+#content .main-item .item-text .item-text__title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#content .main-item .item-text .item-text__desc{
+    margin-bottom: 50px !important;
+}
+#content .main-item .item-text .link-more{
+    text-decoration: none;
+    color: #3ABAB3;
+    position: absolute;
+    right: 30px;
+    bottom: 44px;
+}
+#content .main-item .item-text .link-more:hover{
+    color: #22A68D;
+}
+#content .sidebar{
+    width: 349px;
+    float: right;
+}
+#content .sidebar a{
     color: #3F3A64;
 }
-#content .content-list1 .content-list1__item{
-    width: 349px;
-    height: 534px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #888;
+#content .sidebar .sidebar-box{
+    padding: 20px 30px 30px;
+    border: 2px solid #22536F;
+    border-radius: 12px;
+    margin-bottom: 70px;
 }
-#content .content-list1 a{
+#content .sidebar .sidebar-title > h2{
+    border-bottom: 3px solid #2E526C;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+#content .sidebar .sidebar-item{
+    margin-top: 30px;
+}
+#content .sidebar .sidebar-item a{
     text-decoration: none;
 }
-#content .content-list1 a:hover{
-    color: var(--color);
+#content .sidebar .sidebar-item .sidebar-item__date{
+    font-size: 16px;
+    color: #3F3A64;
+    padding-top: 22px;
+    border: none !important;
+}
+#content .sidebar .sidebar-item .sidebar-item__text{
+    font-size: 18px;
+    color: #3F3A64;
+    font-weight: 700;
+}
+#content .sidebar .sidebar-item__text a:hover{
+    color: #22A68D;
+}
+#content .sidebar-box .sidebar-item button {
+    border: 2px solid #2E526C;
+    border-radius: 8px;
 }
 
-#content .content-list1__item p{
-    padding: 24px 24px 90px;
-
+.btn1{
+    width: 80px;
+    height: 50px;
+    background-color: #fff;
+}
+.btn2{
+    width: 106px;
+    height: 50px;
+    background-color: #fff;
+}
+.btn3{
+    width: 146px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 9px !important;
+    background: #22A68D;
+    color: #fff;
+}
+.btn-2,.btn-1{
+    color: #3F3A64;
+    font-size: 18px;
+}
+.btn-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover{
+    background: #22A68D;
+    color: #fff;
+}
+.container .page-number{
+    position: absolute;
+    bottom: 0px;
+    right: 145px;
+}
+.page-number{
+    display: flex;
+}
+.page-number a{
+    color: #3F3A64;
+}
+.number{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.number a{
+    text-decoration: none;
+}
+.number1{
+    background: #3ABAB3;
+    color: #fff;
+}
+.number1 a{
+    color: #fff;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.hover:hover{
+    background-color: #c3c6d1;
 }

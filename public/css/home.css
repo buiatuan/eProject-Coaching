@@ -106,7 +106,7 @@
 .feature-item--icon{
     width: 100%;
 }
-.feature-item:hover .feature-item-img {
+.feature-item-img:hover {
     transform: translateY(-15%);
     transition: 0.5s;
     cursor: default;
@@ -355,6 +355,7 @@
     background-color: #61B7B2;
     margin-right: 24px;
     border-radius: 8px;
+    margin-top: 6px;
 }
 .popular-course__item--btn:hover{
     text-decoration: none;

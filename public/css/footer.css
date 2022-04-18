@@ -1,9 +1,9 @@
 
 .footer{
     background-color: #F2F8FA;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .footer-row{
-    font-family: 'Noto Sans', sans-serif;
     padding: 75px 134px 40px;
 }
 .footer-introduce{
@@ -16,17 +16,18 @@
 }
 .footer-introduce--text{
     margin-left: 26px;
-    font-size: 14px;
+    font-size: 20px;
     padding-right: 40px;
     margin-bottom: 4px;
     color: #676666;
 }
 .footer-explore{
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 0;
 }
 .footer-explore-heading{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     margin-bottom: 16px;
 }
 .footer-explore-list{
@@ -37,22 +38,24 @@
 }
 .footer-explore-list a{
     color: #676666;
+    font-size: 18px;
 }
 .footer-explore-list li:hover a{
     color: #7BC3BF;
 }
 .footer-address{
-    padding: 0 50px;
+    padding-left: 100px;
 }
 .footer-address-heading{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 800;
     margin-bottom: 16px;
 }
 .footer-address-list{
     list-style: none;
     padding: 0;
     color: #676666;
+    font-size: 18px;
 }
 .footer-address-list a{
     color: #676666;

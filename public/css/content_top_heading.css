@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.content-top{
+    width: 100%;
+    background-color: #F7F5F4;
+    padding: 90px 100px;
+    display: flex;
+    justify-content: center;
+}
+.content-top-col{
+    text-align: center;
+    width: 1150px;
+    margin: 0 auto;
+}
+.content-top-col h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: #3ABAB3;
+}
+.content-top-col h3{
+    font-size: 40px;
+    line-height: 50px;
+    word-spacing: 5px;
+    margin-top: 30px;
+}

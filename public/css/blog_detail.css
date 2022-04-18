@@ -18,33 +18,20 @@ body{
     margin-left: 240px;
 }
 
-.container .banner img{
+.container .banner{
     width: 100%;
-    height: 650px;
-}
-
-.content .content__blog-btn{
-    background-color:  #3abab3;
-    color: #fff;
-    border-radius: 10px;
-    width: 469px;
-    height: 98px;
-    margin-bottom: 85px;
-    margin-top: -6px;
-    margin-left: 142px
-}
-
-.content .content__blog-btn p{
-    font-size: 25px;
-    line-height: 98px;
-    text-align: center;
+    height: 513px;
+    background-image: url("/images/imgs_blog_detail/banner.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container .banner h1{
     font-size: 80px;
     color: #3abab3;
     text-align: center;
-    padding:100px 0 30px 0  ;
+    padding:180px 0 30px 0  ;
+    /*margin-top: 0;*/
 }
 
 .container .banner img{
@@ -69,6 +56,7 @@ body{
     margin-bottom:15px;
     font-size: 40px;
     font-weight: 400;
+    margin-top: 75px;
 }
 .content .title p{
     color: #3f3a64;

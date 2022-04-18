@@ -31,9 +31,8 @@ p{
 #content .container{
     padding: 0 140px;
 }
-.modal.open{
-    display: flex;
-}
+.modal.open,
+.error.open,
 .tick.open{
     display: flex;
 }
@@ -168,7 +167,7 @@ p{
 #content .content__summary .posi{
     position: relative;
 }
-.tick{
+.tick,.error{
     position: absolute;
     width: 36px;
     height: 33px;
