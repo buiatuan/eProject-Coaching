@@ -244,6 +244,7 @@ p{
     width: 873px;
     height: 256px;
     max-width: calc(100% -100px);
+    animation: modelFadeIn ease 0.5s;
 }
 .modal .modal-close{
     position: absolute;
@@ -263,4 +264,14 @@ p{
     width: 101px;
     height: 65px;
     margin-bottom: 35px;
+}
+@keyframes modelFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
