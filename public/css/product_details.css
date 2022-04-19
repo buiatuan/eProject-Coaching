@@ -210,7 +210,8 @@ ul li i{
 .popular-course{
     width: 100%;
     background-color: #FAF9F8;
-    padding: 0px 50px 80px 50px;
+    padding: 0 50px 80px 50px;
+
 }
 .popular-course__content{
     text-align: left;
@@ -220,19 +221,19 @@ ul li i{
 }
 .popular-course__content p{
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     color: #3F3A64;
     font-weight: 700;
 
 
 }
 .popular-course__content h3{
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 400;
     margin-top: 14px;
 }
 .popular-course__content p{
-    font-size: 14px;
+    font-size: 20px;
 }
 .popular-course__list{
     width: 100%;
@@ -243,7 +244,7 @@ ul li i{
 .popular-course__item{
     width: 100%;
     margin-top: 50px;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 .popular-course__item-row{
     background-color: #ffffff;
@@ -301,10 +302,22 @@ ul li i{
     text-align: center;
 }
 .popular-course__text p{
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
 }
 .popular-course__text p a{
     text-decoration: underline;
 }
 /**/
+.owl-dots{
+    text-align: center;
+}
+.owl-dot{
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 50px 5px 0;
+}
