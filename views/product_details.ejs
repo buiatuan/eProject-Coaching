@@ -6,8 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/product_details.css">
     <%- include("stylesheet.ejs") %>
+
 </head>
 <body>
 <%- include("head.ejs") %>
@@ -140,56 +143,65 @@
                 <div class="popular-course__content">
                     <p>Related Courses You may Like</p>
                 </div>
-                <div class="popular-course__list">
-                    <div class="col-lg-4 col-md-6 col-xl-4">
-                        <div class="popular-course__item">
-                            <div class="popular-course__item-row">
-                                <div class="popular-course__item--icon">
-                                    <img src="images/images_home/coaching-post-1.jpg" alt="feature" class="popular-course__item-img">
-                                </div>
-                                <div class="popular-course__item--text">
-                                    <h4><a href="#">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                    <span class="popular-course__item--point">$ 100.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xl-4">
-                        <div class="popular-course__item">
-                            <div class="popular-course__item-row">
-                                <div class="popular-course__item--icon">
-                                    <img src="images/images_home/coaching-post-2.jpg" alt="feature" class="popular-course__item-img">
-                                </div>
-                                <div class="popular-course__item--text">
-                                    <h4><a href="#">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                    <span class="popular-course__item--point">$ 110.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xl-4">
-                        <div class="popular-course__item">
-                            <div class="popular-course__item-row">
-                                <div class="popular-course__item--icon">
-                                    <img src="images/images_home/coaching-post-3.jpg" alt="feature" class="popular-course__item-img">
-                                </div>
-                                <div class="popular-course__item--text">
-                                    <h4><a href="#">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                    <span class="popular-course__item--point">$ 90.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                   <div class="popular-course__list">
+                       <div class="col-lg-4 col-md-6 col-xl-4">
+                           <div class="popular-course__item">
+                               <div class="popular-course__item-row">
+                                   <div class="popular-course__item--icon">
+                                       <img src="images/images_home/coaching-post-1.jpg" alt="feature" class="popular-course__item-img">
+                                   </div>
+                                   <div class="popular-course__item--text">
+                                       <h4><a href="#">Safeguarding & Protecting Children (Online Classroom)</a></h4>
+                                       <span class="popular-course__item--point">$ 100.00</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6 col-xl-4">
+                           <div class="popular-course__item">
+                               <div class="popular-course__item-row">
+                                   <div class="popular-course__item--icon">
+                                       <img src="images/images_home/coaching-post-2.jpg" alt="feature" class="popular-course__item-img">
+                                   </div>
+                                   <div class="popular-course__item--text">
+                                       <h4><a href="#">Safeguarding & Protecting Children 16 - 18 (Online Classroom)</a></h4>
+                                       <span class="popular-course__item--point">$ 110.00</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6 col-xl-4">
+                           <div class="popular-course__item">
+                               <div class="popular-course__item-row">
+                                   <div class="popular-course__item--icon">
+                                       <img src="images/images_home/coaching-post-3.jpg" alt="feature" class="popular-course__item-img">
+                                   </div>
+                                   <div class="popular-course__item--text">
+                                       <h4><a href="#">Equality in Sport and Physical Activity (Online Classroom)</a></h4>
+                                       <span class="popular-course__item--point">$ 90.00</span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+
             </div>
 
         </div>
     </div>
 
 
+
+
+
 </section>
+<%- include("common_link_js.ejs") %>
 <%- include("footer.ejs") %>
-<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/owl.carousel.min"></script>
+<script>
     var buttons = document.getElementsByClassName('tablinks');
     var contents = document.getElementsByClassName('tabcontent');
     function showContent(id){
@@ -210,6 +222,8 @@
         });
     }
     showContent('OVERVIEW');
+
+
 </script>
 </body>
 </html>

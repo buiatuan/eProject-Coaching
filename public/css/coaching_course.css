@@ -6,28 +6,28 @@
 body{
 
 }
-.content-top{
-    width: 100%;
-    background-color: #F7F5F4;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-}
-.content-top-col{
-    text-align: center;
-    padding: 0 80px;
-}
-.content-top-col h1{
-    font-size: 70px;
-    font-weight: 600;
-    color: #3ABAB3;
-}
-.content-top-col h3{
-    font-size: 40px;
-    line-height: 50px;
-    word-spacing: 5px;
+/*.content-top{*/
+/*    width: 100%;*/
+/*    background-color: #F7F5F4;*/
+/*    padding: 100px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+/*.content-top-col{*/
+/*    text-align: center;*/
+/*    padding: 0 80px;*/
+/*}*/
+/*.content-top-col h1{*/
+/*    font-size: 70px;*/
+/*    font-weight: 600;*/
+/*    color: #3ABAB3;*/
+/*}*/
+/*.content-top-col h3{*/
+/*    font-size: 40px;*/
+/*    line-height: 50px;*/
+/*    word-spacing: 5px;*/
 
-}
+/*}*/
 .content-name {
     width: 469px;
     height: 98px;
@@ -36,7 +36,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 130px;
+    margin-left: 150px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -53,7 +53,7 @@ body{
 .product-details img{
     width:372px ;
     height:407px ;
-   margin-left: 146px;
+   margin-left: 150px;
     margin-top: 75px;
 }
 .text h5{
@@ -162,7 +162,7 @@ body{
 
 }
 .checkbox33 p{
-    margin: 50px 0px 0px 143px;
+    margin: 50px 0px 0px 165px;
     font-weight: 600;
     font-size: 25px;
 }
@@ -281,3 +281,27 @@ input:checked + .slider .off
     margin-top: 50px;
     margin-left: 60px;
 }
+
+/**/
+.pagination > li > a{
+    margin-right: 20px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    background-color: #3abab3;
+    border: 1px solid #ddd;
+}
+.example{
+    text-align: center;
+}
+.pagination{
+    margin-top: 60px;
+}
+/*.pagination > li > a{*/
+/*    background-color: rgb(27, 109, 133);*/
+/*    transition: 0.5s;*/
+/*}*/
+/*.pagination > li > a{*/
+/*    background-color: rgba(97, 183, 178, 0.8);*/
+/*    transition: 0.5s;*/
+/*}*/
