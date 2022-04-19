@@ -207,7 +207,7 @@ ul li i{
     text-align: left;
     margin-top: 80px;
     display: block;
-    margin-left: 65px;
+    margin-left: 115px;
 }
 .popular-course__content p{
     text-transform: uppercase;
@@ -227,7 +227,7 @@ ul li i{
 }
 .popular-course__list{
     width: 100%;
-    padding: 0 20px;
+    padding: 0 70px;
     display: flex;
 }
 
