@@ -20,7 +20,7 @@ img{
     float: none;
 }
 #content .content__banner{
-    background: url('../images/imgs_blog/banner.png') no-repeat;
+    background: url('../images/imgs_contact/banner.png') no-repeat;
     margin: 0 30px;
     position: relative;
 }

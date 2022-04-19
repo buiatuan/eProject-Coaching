@@ -7,7 +7,8 @@
 }
 .img-contact img{
     width: 100%;
-    padding: 0 29px
+    background: url('../images/imgs_contact/banner.png') no-repeat;
+    height: 510px;
 }
 .btn-contact{
     background-color: #3ABAB3;
