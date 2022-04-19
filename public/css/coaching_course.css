@@ -92,6 +92,9 @@ body{
     justify-content: center;
     border: none;
 }
+.text a{
+    text-decoration: none;
+}
 
 /*filler*/
 .filter {
