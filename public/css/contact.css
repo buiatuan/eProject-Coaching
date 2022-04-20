@@ -3,152 +3,71 @@
 }
 .container{
     width: 1440px;
-    margin: 0 auto;
 }
-.img-contact img{
+.img-contact img {
     width: 100%;
-    background: url('../images/imgs_contact/banner.png') no-repeat;
     height: 510px;
+    background: url('../images/imgs_contact/banner.png') no-repeat;
 }
-.btn-contact{
-    background-color: #3ABAB3;
-    width: 469px;
-    height: 98px;
-    margin-left: 154px;
-    font-size: 25px;
-    border: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    color: #ffffff;
-    margin-top: 1px;
+.banner-contact{
+    margin-top: 100px;
     margin-bottom: 100px;
 }
-.box-1 h3{
+.banner-p{
+    color: #3ABAB3;
     font-weight: 600;
-    font-size: 60px;
-    margin-left: 154px;
-    margin-right: 235px;
-    margin-top: -7px;
-    color: #3F3A64;
-    float: left;
-}
-.contact-us{
-    display: flex;
-    justify-content: center;
-}
-.box-2{
-    float: right;
-    margin-right: 254px;
     font-size: 20px;
+    text-align: center;
+}
+.banner-h3{
     color: #3F3A64;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.justify-content-center {
+    justify-content: center !important;
+    margin-bottom: 50px;
+}
+.row {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
-.contact-us{
-    margin-bottom: 5px;
+.contact-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-left: 50px;
 }
-.sp-box2{
+.contact-item p{
+    color: #3F3A64;
+    line-height: 30px;
+    font-size: 15px;
+}
+.contact-item h4{
+    color: #3F3A64;
+    font-size: 20px;
     font-weight: 600;
 }
-.form{
+.contact__form .form-control {
+    height: 55px;
+    border-radius: 12px;
+    padding-left: 10px;
+    border: 2px solid #eee;
+    background: #eee;
+}
+.contact__form textarea.form-control {
+    height: auto;
+    border-radius: 15px;
+    padding-top: 15px;
+}
+#map{
     display: flex;
-}
-.form-yname{
-    display: flex;
-    justify-content: center;
-}
-label{
-    color: #3F3A64;
-}
-.text-red{
-    color: red;
-}
-.form-label{
-    margin-left: 154px;
-    margin-bottom: 27px;
-}
-.form-contact-yname1{
-    width: 561px;
-    height: 85px;
-    border-radius: 12px;
-    margin-right: 13px;
-    outline: none;
-}
-.form-contact-yname2{
-    width: 561px;
-    height: 85px;
-    border-radius: 12px;
-    margin-left: 13px;
-    outline: none;
-}
-input.form-contact-yname1{
-    font-size: 30px;
-}
-input.form-contact-yname2{
-    font-size: 30px;
-}
-.form-yname{
-    width: 100%;
-}
-.form-yname1{
-    margin-left: 146px;
-}
-.form-yname2{
-    margin-right: 146px;
-}
-.form-contact-email{
-    width: 1150px;
-    height: 85px;
-    margin-left: 146px;
-    border-radius: 12px;
-    outline: none;
-}
-input.form-contact-email{
-    font-size: 30px;
-}
-.form-contact-subject{
-    width: 1150px;
-    height: 85px;
-    margin-left: 146px;
-    border-radius: 12px;
-    outline: none;
-}
-input.form-contact-subject{
-    font-size: 30px;
-}
-.form-label-ms{
-    margin-left: 154px;
-    margin-top: 27px;
-    margin-bottom: 25px;
-}
-.form-label-ctgr{
-    margin-left: 154px;
-    margin-top: 27px;
-    margin-bottom: 25px;
-}
-.form-select-ctgr{
-    width: 1150px;
-    height: 85px;
-    margin-left: 146px;
-    border-radius: 12px;
-    outline: none;
-    font-size: 30px;
-    color: #D0D1D3;
-}
-.form-label-msg{
-    margin-left: 154px;
-    margin-top: 27px;
-    margin-bottom: 25px;
-}
-.form-textarea{
-    width: 1150px;
-    height: 327px;
-    margin-left: 146px;
-    border-radius: 12px;
-    margin-bottom: 74px;
-    outline: none;
-}
-textarea.form-textarea{
-    font-size: 30px;
+    justify-content: space-around;
+    margin-bottom: 100px;
 }
 .btn-contact-send{
     background-color: #61B7B2;
@@ -157,8 +76,7 @@ textarea.form-textarea{
     height: 50px;
     border-radius: 12px;
     border: 1px solid #61B7B2;
-    margin-left: 1135px;
-    margin-bottom: 54px;
+    margin-left: -15px;
 }
 button[type=submit]:hover {
     background-color: #1b6d85;

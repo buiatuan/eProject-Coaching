@@ -15,59 +15,76 @@
     <div class="img-contact">
         <img src="images/imgs_contact/bgr-banner.png"/>
     </div>
-    <form>
-        <button class="btn-contact" type="submit">Contact </button>
-    </form>
-    <div class="contact-us">
-        <div class="box-1">
-            <h3> Contact Us </h3>
+    <div class="banner-contact">
+        <div class="banner-p">
+            <p> CONTACT </p>
         </div>
-        <div class="box-2">
-            <p> <span class="sp-box2"> Opening hours </span> </br>
-                Monday to Thursday: 10am - 1pm and 2pm to 5pm </br>
-                Friday: 10am - 1pm and 2pm to 4:30pm </br>
-                Closed weekends </p>
+        <div class="banner-h3">
+            <p>  For more information about our </br> courses, get in touch </p>
         </div>
     </div>
-    <div class="form">
-        <form>
-            <label class="form-label"> Your name<span class="text-red">*</span></label>
-            <div class="form-yname">
-                <div class="form-yname1">
-                    <input class="form-contact-yname1" type="email" name="email" placeholder=" "required/>
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-12 col-md-6">
+                    <div class="contact-item">
+                        <p>Email Us</p>
+                        <h4>info@yourdomain.com</h4>
+                    </div>
                 </div>
-                <div class="form-yname2">
-                    <input class="form-contact-yname2" type="text" name="user_name" placeholder=" "required/>
+                <div class="col-lg-12 col-md-6">
+                    <div class="contact-item">
+                        <p>Make a Call</p>
+                        <h4>+(68) 345 5902</h4>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6">
+                    <div class="contact-item">
+                        <p>Corporate Office</p>
+                        <h4>123 Fifth Floor East 26th Street
+                            New York, NY 10011 </h4>
+                    </div>
                 </div>
             </div>
-            <label class="form-label-ms"> Email<span class="text-red">*</span> </label>
-            <div class="form-mail">
-                <input class="form-contact-email" type="email" name="email" placeholder=" "required/>
+        </div>
+        <form class="contact__form form-row " id="contactForm">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <textarea id="message" name="message" cols="30" rows="6" class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
             </div>
-            <label class="form-label-ms"> Subject<span class="text-red">*</span> </label>
-            <div class="form-sub">
-                <input class="form-contact-subject" type="text" name="subject" placeholder=" "required/>
-            </div>
-            <label class="form-label-ctgr"> Category <span class="text-red">*</span></label>
-            <div class="form-category">
-                <select class="form-select-ctgr" name="select-contact">
-                    <option value="Please Select"> Please select </option>
-                    <option> </option>
-                    <option> </option>
-                    <option> </option>
-                </select>
-            </div>
-            <label class="form-label-msg">Message<span class="text-red">*</span></label>
-            <div class="form-message">
-                <textarea class="form-textarea form-contact" name="description"></textarea>
-            </div>
-            <div>
-                <button class="btn-contact-send" type="submit">Send</button>
+            <div class="col-lg-12">
+                <div class="mt-4 ">
+                    <button class="btn-contact-send" type="submit">Send Message</button>
+                </div>
             </div>
         </form>
     </div>
+    <div class="col-xl-12">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.688003911361!2d-73.99643894609376!3d40.743458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a687f0ef0f%3A0x88bb44a3d582adc1!2sElite%20Shippers!5e0!3m2!1svi!2s!4v1650477791066!5m2!1svi!2s" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 </div>
-<%- include("footer.ejs") %>
-<%- include("common_link_js.ejs") %>
+<%- include("common_link_js.ejs")%>
 </body>
+<%- include("footer.ejs") %>
 </html>
