@@ -31,7 +31,7 @@ body{
     color: #3abab3;
     text-align: center;
     padding:180px 0 30px 0  ;
-    /*margin-top: 0;*/
+    margin-top: 0;
 }
 
 .container .banner img{
@@ -43,12 +43,12 @@ body{
 .content{
     width: 1153px;
     float: none;
+    margin: 0 auto;
+    padding: 0 5px;
 }
 .content .title{
     width: 100%;
-    text-align: center; 
-    margin-left: 144px;
-    margin-right: 144px;
+    text-align: center;
 }
 
 .content .title h3{
@@ -68,7 +68,6 @@ body{
     width: 100%;
     float: left;
     margin-top: 48px;
-    margin-left:120px;
 }
 
 .content_body .content1 p{
@@ -88,7 +87,7 @@ body{
 .content .content_body .col-lg-3 {
     float: left;
     width: 40%;
-    text-align:lefl
+    text-align: left;
 }
 .content .content_body .col-lg-7 {
     float: left;

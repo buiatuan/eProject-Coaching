@@ -13,6 +13,7 @@
 .section{
     display: block;
     font-family: 'Noto Sans', sans-serif;
+    color: #3F3A64;
 }
 /*banner-top*/
 .banner-top{
@@ -45,7 +46,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffffff;
     display: block;
     min-width: 150px;
@@ -97,7 +98,7 @@
 .feature-main{
     display: flex;
     justify-content: space-around;
-    padding: 0 140px;
+    padding: 0 150px;
     margin-top: 15px;
 }
 .feature-item{
@@ -122,8 +123,12 @@
     font-size: 18px;
     font-weight: 600;
 }
+.feature-item--text p{
+    font-size: 18px;
+    display: table;
+}
 
-/*section-about-us*/
+    /*section-about-us*/
 .section-about-us{
     width: 100%;
     padding: 0 150px;
@@ -231,6 +236,11 @@
     width: 100%;
     margin-top: 50px;
     padding: 0 10px;
+}
+.popular-course__item:hover .popular-course__item-row{
+    transform: translateZ(2px);
+    box-shadow: 0 0 22px #b4b0b0;
+    transition: 0.3s;
 }
 .popular-course__item-row{
     background-color: #ffffff;
