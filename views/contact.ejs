@@ -12,79 +12,69 @@
 <body>
 <%- include("head.ejs") %>
 <div class="container">
-    <div class="img-contact">
-        <img src="images/imgs_contact/bgr-banner.png"/>
-    </div>
-    <div class="banner-contact">
-        <div class="banner-p">
-            <p> CONTACT </p>
-        </div>
-        <div class="banner-h3">
-            <p>  For more information about our </br> courses, get in touch </p>
+    <div class="banner">
+        <div class="banner-contact">
+            <p> Contact Us </p>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-lg-4">
-            <div class="row">
-                <div class="col-lg-12 col-md-6">
-                    <div class="contact-item">
-                        <p>Email Us</p>
-                        <h4>info@yourdomain.com</h4>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                    <div class="contact-item">
-                        <p>Make a Call</p>
-                        <h4>+(68) 345 5902</h4>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-6">
-                    <div class="contact-item">
-                        <p>Corporate Office</p>
-                        <h4>123 Fifth Floor East 26th Street
-                            New York, NY 10011 </h4>
-                    </div>
-                </div>
+    <div class="address-contact">
+        <div>
+            <div class="banner-addres">
+                <p> we love to chat </p>
+                <hr  width="100%" align="center" />
+            </div>
+            <div class="open-hours-contact">
+                <p> <span class="open-hours"> Open Hours </span>  </br>
+                Monday to Thursday </br>
+                10am - 1pm and 2pm to 5pm </br>
+                Friday 10am - 1pm and 2pm to 4:30pm </br>
+                Closed Weekends
+                </p>
+                <hr  width="100%" align="center" />
+            </div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.688003911361!2d-73.99643894609376!3d40.743458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a687f0ef0f%3A0x88bb44a3d582adc1!2sElite%20Shippers!5e0!3m2!1svi!2s!4v1650649209871!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr  width="100%" align="center" />
+            </div>
+            <div class="address">
+                <p> +(68) 345 5902 </br>
+                info@yourdomain.com </br>
+                123 Fifth Floor East 26th Street  </br>
+                    New York, NY 10011
+                </p>
+                <hr  width="100%" align="center" />
             </div>
         </div>
-        <form class="contact__form form-row " id="contactForm">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="form-group">
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <textarea id="message" name="message" cols="30" rows="6" class="form-control" placeholder="Your Message"></textarea>
-                    </div>
-                </div>
+        <div>
+            <div class="banner-addres">
+                <p> request to consultation </p>
             </div>
-            <div class="col-lg-12">
-                <div class="mt-4 ">
-                    <button class="btn-contact-send" type="submit">Send Message</button>
+            <form class="form">
+                <label> Your Name <span class="text-form">*</span></label>
+                <div>
+                    <input class="form-contact" type="text" id="yourname" name="yourname" required/>
                 </div>
-            </div>
-        </form>
-    </div>
-    <div class="col-xl-12">
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6045.688003911361!2d-73.99643894609376!3d40.743458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a687f0ef0f%3A0x88bb44a3d582adc1!2sElite%20Shippers!5e0!3m2!1svi!2s!4v1650477791066!5m2!1svi!2s" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <label> Email <span class="text-form">*</span></label>
+                <div>
+                    <input class="form-contact" type="email" id="email" name="email" required/>
+                </div>
+                <label> Subject <span class="text-form">*</span></label>
+                <div>
+                    <input class="form-contact" type="text" id="subject" name="subject" required/>
+                </div>
+                <label> Message <span class="text-form">*</span></label>
+                <div>
+                    <textarea id="textarea" name="description"></textarea>
+                </div>
+                <div class="btn-contact-us">
+                    <button class="btn-contact" type="submit">Send</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-<%- include("common_link_js.ejs")%>
 </body>
 <%- include("footer.ejs") %>
+<%- include("common_link_js") %>
+<script src="js/contact.js"> </script>
 </html>
