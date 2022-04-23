@@ -9,6 +9,29 @@ app.listen(port, () => {
 app.set("view engine","ejs");
 app.use(express.static("public"));
 
+// Tạo cấu hình và kết nối mysql
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host: 'localhost',
+    port: '3306',
+    user: 'root',
+    password: '',
+    database: 'Eproject_coaching',
+    multipleStatements: true
+})
+
+// Test sql
+app.get('/test-database', (req, res) =>{
+    const sql_txt = " select * from Blog ";
+    conn.query(sql_txt,(err, result) =>{
+        if(err) res.send(err.message);
+        else res.render("test_database",{
+            blog: result,
+        });
+    });
+});
+
 
 // tạo trang chủ
 app.get('/', function (req, res) {
@@ -78,3 +101,5 @@ app.get('/online-class-payfee', function (req, res) {
 app.get('/blog-detail', function (req, res) {
     res.render("blog_detail");
 });
+
+
