@@ -166,6 +166,7 @@ p{
 #content .content__summary{
     margin-bottom: 50px;
     margin-top: 77px;
+    padding-right: 0;
 }
 #content .content__summary .summary-itembox table{
     font-size: 20px;
