@@ -25,59 +25,87 @@
         </div>
 
         <!-- start: basket -->
-        <div class="content__basket content-font">
+        <form class="content__basket content-font col-md-7">
             <div class="basket-item ">
                 <h2>Basket</h2>
-                <div class="basket-item1 flexbox">
-                    <b class="item__1">Product</b>
-                    <b class="item__2">Unit Price</b>
-                    <b class="item__3">Sub Total</b>
+                <table>
+                    <thead class="basket-thead">
+                            <th class="item__1">Product</th>
+                            <th class="item__2">Unit Price</th>
+                    </thead>
+                    <tbody class="basket-tbody js-course">
+                        <tr class="basket-product ">
+                            <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
+                            <td class="product__2">$<span>33.00</span></td>
+                            <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
+                        </tr>
+                        <tr class="basket-product ">
+                            <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
+                            <td class="product__2">$<span>33.00</span></td>
+                            <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
+                        </tr>
+                        <tr class="basket-product ">
+                            <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
+                            <td class="product__2">$<span>33.00</span></td>
+                            <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="basket-total"">
+                    <p><b> Sub Total </b>$<span></span></p>
                 </div>
-                <div class="basket-item2 js-course">
-                    <div class="basket-product flexbox">
-                        <p >Safeguarding & Protecting Children (Online Classroom) - 35744</p>
-                        <p >$33.00</p>
-                        <p >$33.00</p>
+                <div class="basket-discount flexbox between">
+                    <label style="line-height: 40px;"><b> Discount code</b></label>
+                    <div class="posi">
+                        <input class="js-value" name="code-discount" type="text"/>
+                        <img src="images/imgs_payfee/tick.png" class="tick js-tick" alt="ok">
+                        <img src="images/imgs_payfee/clear.png" class="error js-error" alt="error">
                     </div>
-                    <div class="delete">
-                        <img src="images/imgs_payfee/clear.png" alt="clear" >
-                    </div>
-                    <div class="clear"></div>
+                    <button onclick="check()" type="button" >ENTER</button>
+                </div >
                 </div>
-            </div>
-        </div>
+        </form>
 
         <!-- start: summary -->
-        <div class="content__summary ">
+        <div class="content__summary col-md-5">
             <div class="summary-item content-font">
                 <h2>Summary</h2>
                 <div class="summary-itembox ">
-                    <div class="summary-oclass flexbox between">
-                        <p>Safeguarding & Protecting Children (Online Classroom) - 35744</p>
-                        <p style="color: #61B7B2;">$ 120.00</p>
-                    </div>
                     <div class="summary-vat flexbox between">
-                        <p>Includes VAT:</p>
-                        <p style="color: #61B7B2;">$ 0.00</p>
+                        <p><b>Includes VAT</b></p>
+                        <p style="color: #61B7B2;">$<span>0.00</span></p>
                     </div>
-                    <div class="summary-discount flexbox between">
-                        <label><b> Discount code</b></label>
-                        <div class="posi">
-                            <input class="js-value" name="code-discount" type="text"/>
-                            <img src="images/imgs_payfee/tick.png" class="tick js-tick" alt="ok">
-                            <img src="images/imgs_payfee/clear.png" class="error js-error" alt="error">
-                        </div>
-                        <button onclick="check()" type="button" value="Submit">VERIFICATION</button>
-                    </div >
+                    <div class="summary-oclass flexbox between">
+                        <p><b>Discount code</b></p>
+                        <p style="color: #61B7B2;">$<span>0.00</span></p>
+                    </div>
                     <div class="summary-total flexbox between">
                         <p><b> Total price:</b></p>
-                        <p style="color: #61B7B2;">$33.00</p>
+                        <p style="color: #61B7B2;">$<span></span></p>
                     </div>
+                    <table>
+                        <tr>
+                            <td><b>Payment:</b></td>
+                            <td>
+                                <label for="radio1" class="radio">
+                                    <input type="radio" name="pay" value="cash" id="radio1" checked>
+                                    <div class="icon-radio"></div>
+                                    Cash
+                                </label>
+                            </td>
+                            <td>
+                                <label for="radio2" class="radio">
+                                    <input type="radio" name="pay" value="Visa/Master" id="radio2">
+                                    <div class="icon-radio"></div>
+                                    Visa/Master
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="summary-submit">
                 <button type="button" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
-                <button type="button" ><b> CANCEL</b></button>
             </div>
         </div>
     </div>
@@ -123,7 +151,11 @@
 
 
 //    hiển thị tick
-    function check(e) {
+
+    var code = document.querySelector('.summary-oclass span');
+    console.log(code)
+
+    function check() {
         var tick = document.querySelector('.js-tick');
         var error = document.querySelector('.js-error');
         var valueInput = document.querySelector('.js-value').value;
@@ -137,25 +169,60 @@
         function showError() {
             tick.classList.remove('open');
             error.classList.add('open');
-
         }
 
         if (valueInput == 12345) {
             showTick();
+            code.innerHTML = '15.00';
         } else {
             showError();
+            code.innerHTML = '0.00';
         }
+        subTotal()
     }
+
+
+        // total price
+
+    function subTotal() {
+        var cartItem = document.querySelectorAll('.basket-item tbody tr');
+        var total = 0;
+        for (var i = 0; i < cartItem.length; i++) {
+            var priceItem = cartItem[i].querySelector('span').innerHTML;
+            var price = Number.parseFloat(priceItem);
+            total += price;
+            }
+        var totalSub = document.querySelector('.basket-total span');
+        totalSub.innerHTML =total.toFixed(2);
+        function totalPrice() {
+            var vat = Number.parseFloat(document.querySelector('.summary-vat span').innerHTML);
+            var iCode = Number.parseFloat(code.innerHTML);
+            var tprice = document.querySelector('.summary-total span');
+            var result = Number.parseFloat(document.querySelector('.basket-total span').innerHTML) - vat -iCode;
+            if(Number.parseFloat(totalSub.innerHTML) == '0.00'){
+                tprice.innerHTML = '0.00';
+            }else{
+                tprice.innerHTML = result.toFixed(2);
+            }
+        }
+        totalPrice();
+        }
+        subTotal();
+
 
     //delele
 
 
-        var deleteItem = document.querySelector('.delete');
-            deleteItem.addEventListener('click',function(event){
-                var cartDelete = event.target;
-                var cartItem = cartDelete.parentElement.parentElement;
-                cartItem.remove();
-            })
+    var deleteItems = document.querySelectorAll('.delete');
+    for(var deleteItem of deleteItems) {
+        deleteItem.addEventListener('click', function (event) {
+            var cartDelete = event.target;
+            var cartItem = cartDelete.parentElement.parentElement;
+            cartItem.remove();
+            subTotal();
+        })
+    }
+
 
 </script>
 
