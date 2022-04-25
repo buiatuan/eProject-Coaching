@@ -16,125 +16,132 @@
 <%- include("head.ejs") %>
 <section style="width: 1440px;margin: 0 auto;margin-bottom: 80px;margin-top: 76px;">
     <div style="margin-left: -100px">
-    <div class="container1">
-        <div style="cursor: pointer" class="content1-name">
-            <h3>ONLINE CLASSES</h3>
+        <div class="container1">
+            <div style="cursor: pointer" class="content1-name">
+                <h3><%= course.Category %></h3>
+            </div>
+            <div class="text1">
+                <h4><%= course.Category %>
+                    <span style="color: #C93D5B">
+                        <% if (course.Price == 0){ %>
+                            (FREE)
+                        <%}else {%>
+                            (FEE)
+                        <% } %>
+                    </span>
+                </h4>
+                <p>Understand Connect, Thrive: Knowing Your People</p>
+            </div>
         </div>
-        <div class="text1">
-            <h4>ONLINE CLASSES <span style="color: #C93D5B">(PAY FEE)</span></h4>
-            <p>Understand Connect, Thrive: Knowing Your People</p>
-        </div>
-    </div>
-    <div class="box2">
-         <div class="price">
-             <img  src="images/imgs_product/price.png">
-             <div class="price-text">
-                 <p style="padding-right: 190px;font-size: 20px;color: #3F3A64">Price</p>
-                 <p style="font-size: 20px;font-weight: 600;color: #61B7B2">$ 120.00</p>
+        <div class="box2">
+             <div class="price">
+                 <img  src="images/imgs_product/price.png">
+                 <div class="price-text">
+                     <p style="padding-right: 190px;font-size: 20px;color: #3F3A64">Price</p>
+                     <p style="font-size: 20px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
+                 </div>
              </div>
-         </div>
-        <div class="instructor">
-            <img style="width: 29px;height: 43px" src="images/imgs_product/instructor.png">
-            <div class="price-text">
-                <p style="padding-right: 124px;font-size: 20px;color: #3F3A64">Instructor :</p>
-                <p style="font-size: 18px;font-weight: 100;color: #3F3A64">Mikele John </p>
+            <div class="instructor">
+                <img style="width: 29px;height: 43px" src="images/imgs_product/instructor.png">
+                <div class="price-text">
+                    <p style="padding-right: 124px;font-size: 20px;color: #3F3A64">Instructor :</p>
+                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= intructor.Name %></p>
+                </div>
             </div>
-        </div>
-        <div class="instructor">
-            <img src="images/imgs_product/lectures.png">
-            <div class="price-text">
-                <p style="padding-right: 212px;font-size: 20px;color: #3F3A64">Lectures :</p>
-                <p style="font-size: 25px;font-weight: 100;color: #3F3A64">2 </p>
+            <div class="instructor">
+                <img src="images/imgs_product/lectures.png">
+                <div class="price-text">
+                    <p style="padding-right: 212px;font-size: 20px;color: #3F3A64">Lectures :</p>
+                    <p style="font-size: 25px;font-weight: 100;color: #3F3A64"><%= course.Lectures %></p>
+                </div>
             </div>
-        </div>
-        <div class="instructor">
-            <img src="images/imgs_product/enrolled.png">
-            <div class="price-text">
-                <p style="padding-right: 220px;font-size: 20px;color: #3F3A64">Enrolled:</p>
-                <p style="font-size: 25px;font-weight: 100;color: #3F3A64">0 </p>
+            <div class="instructor">
+                <img src="images/imgs_product/enrolled.png">
+                <div class="price-text">
+                    <p style="padding-right: 220px;font-size: 20px;color: #3F3A64">Enrolled:</p>
+                    <p style="font-size: 25px;font-weight: 100;color: #3F3A64"><%= course.Enrolled %></p>
+                </div>
             </div>
-        </div>
-        <div class="instructor">
-            <img src="images/imgs_product/duration.png">
-            <div class="price-text">
-                <p style="padding-right: 175px;font-size: 20px;color: #3F3A64">Duration:</p>
-                <p style="font-size: 18px;font-weight: 100;color: #3F3A64">0 week</p>
+            <div class="instructor">
+                <img src="images/imgs_product/duration.png">
+                <div class="price-text">
+                    <p style="padding-right: 175px;font-size: 20px;color: #3F3A64">Duration:</p>
+                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= course.Duration %></p>
+                </div>
             </div>
-        </div>
-        <div class="instructor">
-            <img src="images/imgs_product/updated.png">
-            <div class="price-text">
-                <p style="padding-right: 92px;font-size: 20px;color: #3F3A64">Updated:</p>
-                <p style="font-size: 18px;font-weight: 100;color: #3F3A64">October 15, 2020 </p>
+            <div class="instructor">
+                <img src="images/imgs_product/updated.png">
+                <div class="price-text">
+                    <p style="padding-right: 92px;font-size: 20px;color: #3F3A64">Updated:</p>
+                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= course.Updated %></p>
 
+                </div>
+            </div>
+            <div style="cursor: pointer" class="content-name">
+                <h3>ENROLL COURSE</h3>
+                <span style="cursor: pointer;display: block">
+                </span>
             </div>
         </div>
-        <div style="cursor: pointer" class="content-name">
-            <h3>ENROLL COURSE</h3>
-            <span style="cursor: pointer;display: block">
-            </span>
-        </div>
-    </div>
-    <div class="box">
-        <div class="box1">
-        <div class="img">
-            <img src="images/imgs_product/Mask Group 22@2x.jpg">
-        </div>
-            <div class="tab">
-                <button class="tablinks active">OVERVIEW</button>
-                <button class="tablinks">INSTRUCTOR</button>
+        <div class="box">
+            <div class="box1">
+            <div class="img">
+                <img src="<%= course.Images %>">
             </div>
-            <div id="OVERVIEW" class="tabcontent">
-                <b style="font-size: 25px;">
-                    Overview
-                </b>
-                <p style="margin-top: 30px;margin-bottom: 50px;font-size: 20px;color: #3F3A64">
-                    This newly updated Online Classroom will raise your awareness of the tell-tale signs of abuse, and give you the tools and confidence you need to deal with any issues sensitively, appropriately, and effectively should the need ever arise in your coaching career. £33 per coach.
-                </p>
-                <b style="font-size: 25px;">
-                    You will be able to:
-                </b>
-                <ul style="margin-top: 30px">
-                    <li>
-                        <i style="float: left;margin: 5px 30px 0 10px;" class="fa-solid fa-check"></i>
-                       <p style=" display: flex;font-size: 20px;color: #3F3A64" > Identify and recognise good coaching practice and the implications for your coaching</p>
-                    </li>
-                    <li>
-                        <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
-                        <p style="  display: flex;font-size: 20px;color: #3F3A64">Refresh your knowledge around recognising safeguarding issues, what to do, and just as importantly, what not to do</p>
-                    </li>
-                    <li>
-                        <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
-                        <p style=" display: flex;font-size: 20px;color: #3F3A64">Explore your values and feelings in relation to child abuse, and recognise their potential impact on your response </p>
-                    </li>
-                    <li>
-                        <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
-                        <p style="  display: flex;font-size: 20px;color: #3F3A64">Take appropriate action if concerns about a child arise </p>
-                    </li>
-                    <li>
-                        <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
-                        <p style=" display: flex;font-size: 20px;color: #3F3A64">learn from and pick the brains of our expert tutors, all of whom have lived Safeguarding experience – such as club welfare officers, schoolteachers, or police officers. </p>
-                    </li>
-
-                </ul>
-            </div>
-            <div id="INSTRUCTOR" class="tabcontent">
-                <b style="font-size: 25px">
-                    Instructor
-                </b>
-                <div>
-                    <img src="images/imgs_product/Mask Group 26@2x.jpg" >
-                    <b style="font-size: 25px;float: right;width: 261px;margin-top: 60px">
-                        Mikele John <br>
-                        Doctor of Psychology
-                        <p style="font-size: 20px;width:500px;font-weight: 100;margin-top: 30px">With over 10 years of experience in the field of psychology. Doctor will bring you new perspectives on issues that are of concern in today’s society.</p>
+                <div class="tab">
+                    <button class="tablinks active">OVERVIEW</button>
+                    <button class="tablinks">INSTRUCTOR</button>
+                </div>
+                <div id="OVERVIEW" class="tabcontent">
+                    <b style="font-size: 25px;">
+                        Overview
                     </b>
+                    <p style="margin-top: 30px;margin-bottom: 50px;font-size: 20px;color: #3F3A64">
+                        <%= course.Overview %>
+                    </p>
+                    <!--<b style="font-size: 25px;">
+                        You will be able to:
+                    </b>
+                    <ul style="margin-top: 30px">
+                        <li>
+                            <i style="float: left;margin: 5px 30px 0 10px;" class="fa-solid fa-check"></i>
+                           <p style=" display: flex;font-size: 20px;color: #3F3A64" > Identify and recognise good coaching practice and the implications for your coaching</p>
+                        </li>
+                        <li>
+                            <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
+                            <p style="  display: flex;font-size: 20px;color: #3F3A64">Refresh your knowledge around recognising safeguarding issues, what to do, and just as importantly, what not to do</p>
+                        </li>
+                        <li>
+                            <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
+                            <p style=" display: flex;font-size: 20px;color: #3F3A64">Explore your values and feelings in relation to child abuse, and recognise their potential impact on your response </p>
+                        </li>
+                        <li>
+                            <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
+                            <p style="  display: flex;font-size: 20px;color: #3F3A64">Take appropriate action if concerns about a child arise </p>
+                        </li>
+                        <li>
+                            <i style="float: left;margin: 5px 30px 0 10px" class="fa-solid fa-check"></i>
+                            <p style=" display: flex;font-size: 20px;color: #3F3A64">learn from and pick the brains of our expert tutors, all of whom have lived Safeguarding experience – such as club welfare officers, schoolteachers, or police officers. </p>
+                        </li>
+
+                    </ul>-->
+                </div>
+                <div id="INSTRUCTOR" class="tabcontent">
+                    <b style="font-size: 25px">
+                        Instructor
+                    </b>
+                    <div>
+                        <img src="<%= intructor.IntructorAvatar %>" >
+                        <b style="font-size: 25px;float: right;width: 261px;margin-top: 60px">
+                            <%= intructor.Name %> <br>
+                            Doctor of Psychology
+                            <p style="font-size: 20px;width:500px;font-weight: 100;margin-top: 30px"><%= intructor.Information %></p>
+                        </b>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-
 
 
     <div class="box3">
@@ -194,7 +201,7 @@
          </div>
         </div>
     </div>
-
+    </div>
 
 
 

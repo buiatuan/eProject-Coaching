@@ -137,7 +137,7 @@
                                         <img src="<%= course[i].Images %>" alt="feature" class="popular-course__item-img">
                                     </div>
                                     <div class="popular-course__item--text">
-                                        <h4><a href="/product-details"><%= course[i].Name %></a></h4>
+                                        <h4><a href="/product-details?id=<%= course[i].ID %>"><%= course[i].Name %></a></h4>
                                         <span class="popular-course__item--point"><%= course[i].Rating %></span>
                                         <p><%= course[i].Review %></p>
                                     </div>
@@ -207,9 +207,9 @@
                                         <img src="<%= blog[i].Images %>" alt="feature" class="popular-course__item-img">
                                     </div>
                                     <div class="popular-course__item--text">
-                                        <h4><a href="/blog-detail"><%= blog[i].Heading %></a></h4>
+                                        <h4><a href="/blog-detail?id=<%= blog[i].ID %>"><%= blog[i].Heading %></a></h4>
                                         <span class="Popular-blog_item-date"><%= blog[i].PostDate %></span>
-                                        <a href="/blog-detail" class="popular-course__item--btn">Read</a>
+                                        <a href="/blog-detail?id=<%= blog[i].ID %>" class="popular-course__item--btn">Read</a>
                                     </div>
                                 </div>
                             </div>

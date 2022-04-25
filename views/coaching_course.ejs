@@ -74,18 +74,28 @@
             </div>
         </div>
     </div>
+    <% for (var i = 0; i < course.length; i++) {%>
     <div class="product">
         <div class="product-details">
-            <img src="images/imgs_coaching_course/Mask Group 14@2x.jpg" >
+            <img src="<%= course[i].Images %>" >
             <div class="text">
-                <h5>WORKSHOPS <span class="red">(FREE)</span></h5>
-                <h3>Behaviour Change Tactics</h3>
-                <p>Learn useful strategies to help people get active, and innovative nudge techniques to ensure they stay active</p>
-                <a style="text-decoration: none" href="http://localhost:2909/Product-details"><button class="content-name"> DEATAILS</button></a>
+                <h5><%= course[i].Category %>
+                    <span class="red">
+                        <% if(course[i].Price == 0){ %>
+                                (FREE)
+                        <% }else{ %>
+                                (FEE)
+                        <% } %>
+                    </span>
+                </h5>
+                <h3><%= course[i].Name %></h3>
+                <p><%= course[i].Overview %></p>
+                <a style="text-decoration: none" href="/product-details?id=<%= course[i].ID %>"><button class="content-name"> DEATAILS</button></a>
             </div>
         </div>
     </div>
-    <div class="product">
+    <% } %>
+    <!--<div class="product">
         <div class="product-details">
             <img src="images/imgs_coaching_course/Mask Group 15@2x.jpg" alt="">
             <div class="text">
@@ -118,7 +128,7 @@
             </div>
         </div>
     </div>
-
+-->
 
     <div class="example">
         <div class="container">

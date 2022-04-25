@@ -74,7 +74,6 @@ app.get('/blog', function (req, res) {
             blog: result,
         });
     })
-
 });
 // Terms
 app.get('/terms', function (req, res) {
@@ -93,17 +92,44 @@ app.get('/register', function (req, res) {
 
 // Coaching course
 app.get('/coaching-course', function (req, res) {
-    res.render("coaching_course");
+    const sql_txt = "select * from courses where Category like 'Workshops'";
+    conn.query(sql_txt, (err, result) =>{
+        if (err) res.send(err.message);
+        else res.render("coaching_course",{
+            course: result,
+        });
+    })
 });
 
 // Online class
 app.get('/online-class', function (req, res) {
-    res.render("online_classes");
+    const sql_txt = "select * from courses where Category like 'Online Class'";
+    conn.query(sql_txt, (err, result) =>{
+        if (err) res.send(err.message);
+        else res.render("online_classes",{
+            course: result,
+        });
+    })
 });
 
 // product details
 app.get('/product-details', function (req, res) {
-    res.render("product_details");
+    const spid = req.query.id || 0;
+    const sql_txt1 = "select * from courses where ID = " +spid;
+    conn.query(sql_txt1, (err, result1) =>{
+        if (err) res.send(err.message);
+        else if(result1.length > 0){
+            const sql_txt2 = `select * from intructor where ID = ${result1[0].IntructorID}`;
+            conn.query(sql_txt2, function (err2, result2) {
+                if(err2) res.send(err2.message);
+                else res.render("product_details",{
+                    course: result1[0],
+                    intructor: result2[0],
+                });
+            })
+        }
+        else res.send("404 Not found");
+    })
 });
 
 // online classes pay fee
@@ -113,7 +139,14 @@ app.get('/online-class-payfee', function (req, res) {
 
 // blog detail
 app.get('/blog-detail', function (req, res) {
-    res.render("blog_detail");
+    const spid = req.query.id || 0;
+    const sql_txt = "select * from blog where ID = " +spid;
+    conn.query(sql_txt, (err, result) =>{
+        if (err) res.send(err.message);
+        else if(result.length > 0)
+            res.render("blog_detail",{
+                blog: result[0],
+            });
+        else res.send("404 Not found");
+    })
 });
-
-
