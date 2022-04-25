@@ -22,57 +22,38 @@
     </div>
     <div class="container">
         <div class="main">
+            <% for (var i = 0; i < blog.length; i++) { %>
             <div class="main-item">
-                <img src="images/imgs_blog/blog-1.png" alt="blog">
+                <img src="<%= blog[i].Images %>" alt="blog">
                 <div class="item-text">
                     <div class="item-text__da">
-                        <p>December 10, 2021</p>
-                        <p>Written by Anna</p>
+                        <p><%= blog[i].PostDate %></p>
+                        <p><%= blog[i].Author %></p>
                     </div>
-                    <h3 class="item-text__title">Want to Be a Leader? Lead Yourself First</h3>
-                    <p class="item-text__desc">At 16, Nero became the emperor of the most powerful civilization in the world. Barely out of diapers, he conquered new lands for Rome and quashed rebellions from the comfort of a palace of unimaginable luxury.</p>
+                    <h3 class="item-text__title"><%= blog[i].Heading %></h3>
+                    <p class="item-text__desc"><%= blog[i].Review %></p>
                     <p><a href="/blog-detail" class="link-more"> Read more <i class="fa-solid fa-angles-right"></i></a></p>
                 </div>
             </div>
-            <div class="main-item">
-                <img src="images/imgs_blog/blog-2.png" alt="blog">
-                <div class="item-text">
-                    <div class="item-text__da">
-                        <p>March 19, 2022</p>
-                        <p>Written by Makhosi Nejeser</p>
-                    </div>
-                    <h3 class="item-text__title">How to Find Freedom from Toxic Hustle Culture</h3>
-                    <p class="item-text__desc">Do you struggle with overwhelm and stress because you’re always too busy? Do you constantly feel like you’re hustling and forcing your way to your next big goal? </p>
-                    <p><a href="/blog-detail" class="link-more"> Read more <i class="fa-solid fa-angles-right"></i></a></p>
-                </div>
-            </div>
-            <div class="main-item">
-                <img src="images/imgs_blog/blog-3.png" alt="blog">
-                <div class="item-text">
-                    <div class="item-text__da">
-                        <p>August 10, 2021</p>
-                        <p>Written by Matt Crossman</p>
-                    </div>
-                    <h3 class="item-text__title">How to Create an Exercise Routine That Doesn’t Suck</h3>
-                    <p class="item-text__desc">At 16, Nero became the emperor of the most powerful civilization in the world. Barely out of diapers, he conquered new lands for Rome and quashed rebellions from the comfort of a palace of unimaginable luxury.</p>
-                    <p><a href="/blog-detail" class="link-more"> Read more <i class="fa-solid fa-angles-right"></i></a></p>
-                </div>
-            </div>
+            <% } %>
+
         </div>
         <div class="sidebar">
             <div class="sidebar-box">
                 <div class="sidebar-title">
                     <h2>Latest Posts</h2>
+                    <% var flag = 0;
+                    for (var i = 0; i < blog.length; i++) {
+                        flag ++;
+                        if( flag <= 2 ){
+                    %>
                     <div class="sidebar-item">
-                        <img src="images/imgs_blog/sidebar-1.png" alt="blog">
-                        <p class="sidebar-item__date">August 12, 2021</p>
-                        <h2 class="sidebar-item__text"><a href="#">What Is Happiness and Why Is It Important?</a></h2>
+                        <img src="<%= blog[i].Images %>" alt="blog">
+                        <p class="sidebar-item__date"><%= blog[i].PostDate %></p>
+                        <h2 class="sidebar-item__text"><a href="#"><%= blog[i].Heading %></a></h2>
                     </div>
-                    <div class="sidebar-item">
-                        <img src="images/imgs_blog/sidebar-2.png" alt="blog">
-                        <p class="sidebar-item__date">June 15, 2021</p>
-                        <h2 class="sidebar-item__text"><a href="#"> How to Balance Work and Family Without Feeling Like a Failure</a></h2>
-                    </div>
+                    <% } } %>
+
                 </div>
             </div>
             <div class="sidebar-box">

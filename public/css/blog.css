@@ -45,11 +45,15 @@ img{
 .main{
     width: 718px;
     float: left;
+    height: 2440px;
+    overflow: hidden;
+    padding: 0 10px;
 }
 #content .main .main-item{
     box-shadow: 0 0 5px #888;
     border-radius: 12px;
     margin-bottom: 74px;
+    overflow: hidden;
 }
 #content .main .main-item p{
     font-size: 18px;

@@ -249,8 +249,12 @@
     border-radius: 12px;
     overflow: hidden;
 }
+.popular-course__item--icon{
+    height: 270px;
+}
 .popular-course__item--icon img {
-    width: 102%;
+    width: 100%;
+    height: 100%;
 }
 .popular-course__item--text{
     width: 100%;

@@ -129,48 +129,22 @@
                     </div>
 
                     <div class="popular-course__list">
+                        <% for(var i= 0; i < 3; i++){ %>
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="popular-course__item">
                                 <div class="popular-course__item-row">
                                     <div class="popular-course__item--icon">
-                                        <img src="images/images_home/coaching-post-1.jpg" alt="feature" class="popular-course__item-img">
+                                        <img src="<%= course[i].Images %>" alt="feature" class="popular-course__item-img">
                                     </div>
                                     <div class="popular-course__item--text">
-                                        <h4><a href="/product-details">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                        <span class="popular-course__item--point">9.5</span>
-                                        <p>Based on 18816 reviews</p>
+                                        <h4><a href="/product-details"><%= course[i].Name %></a></h4>
+                                        <span class="popular-course__item--point"><%= course[i].Rating %></span>
+                                        <p><%= course[i].Review %></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="popular-course__item">
-                                <div class="popular-course__item-row">
-                                    <div class="popular-course__item--icon">
-                                        <img src="images/images_home/coaching-post-2.jpg" alt="feature" class="popular-course__item-img">
-                                    </div>
-                                    <div class="popular-course__item--text">
-                                        <h4><a href="/product-details">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                        <span class="popular-course__item--point">9.3</span>
-                                        <p>Based on 18816 reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="popular-course__item">
-                                <div class="popular-course__item-row">
-                                    <div class="popular-course__item--icon">
-                                        <img src="images/images_home/coaching-post-3.jpg" alt="feature" class="popular-course__item-img">
-                                    </div>
-                                    <div class="popular-course__item--text">
-                                        <h4><a href="/product-details">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                        <span class="popular-course__item--point">9.0</span>
-                                        <p>Based on 18816 reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <% } %>
                     </div>
 
                     <div class="popular-course__text">
@@ -225,48 +199,22 @@
                     </div>
 
                     <div class="popular-course__list">
+                        <% for (var i = 4; i < 7; i++){ %>
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="popular-course__item">
                                 <div class="popular-course__item-row">
                                     <div class="popular-course__item--icon">
-                                        <img src="images/images_home/home-blog-1.jpg" alt="feature" class="popular-course__item-img">
+                                        <img src="<%= blog[i].Images %>" alt="feature" class="popular-course__item-img">
                                     </div>
                                     <div class="popular-course__item--text">
-                                        <h4><a href="/blog-detail">Computer Science Careers: Why Computer Science Is For Everyone</a></h4>
-                                        <span class="Popular-blog_item-date">October 20, 2021 </span>
+                                        <h4><a href="/blog-detail"><%= blog[i].Heading %></a></h4>
+                                        <span class="Popular-blog_item-date"><%= blog[i].PostDate %></span>
                                         <a href="/blog-detail" class="popular-course__item--btn">Read</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="popular-course__item">
-                                <div class="popular-course__item-row">
-                                    <div class="popular-course__item--icon">
-                                        <img src="images/images_home/home-blog-2.jpg" alt="feature" class="popular-course__item-img">
-                                    </div>
-                                    <div class="popular-course__item--text">
-                                        <h4><a href="/blog-detail">Scientific Self-Care: How to Feel Happy, Grounded, and Grateful</a></h4>
-                                        <span class="Popular-blog_item-date">October 20, 2021 </span>
-                                        <a href="/blog-detail" class="popular-course__item--btn">Read</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="popular-course__item">
-                                <div class="popular-course__item-row">
-                                    <div class="popular-course__item--icon">
-                                        <img src="images/images_home/home-blog-3.jpg" alt="feature" class="popular-course__item-img">
-                                    </div>
-                                    <div class="popular-course__item--text">
-                                        <h4><a href="/blog-detail">Tips for Successful Online Learning</a></h4>
-                                        <span class="Popular-blog_item-date">October 20, 2021 </span>
-                                        <a href="/blog-detail" class="popular-course__item--btn">Read</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <% } %>
                     </div>
 
                 </div>

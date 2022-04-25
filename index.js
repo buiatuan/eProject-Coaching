@@ -35,7 +35,14 @@ app.get('/test-database', (req, res) =>{
 
 // tạo trang chủ
 app.get('/', function (req, res) {
-    res.render("home");
+    const sql_txt = "select * from courses; select * from blog";
+    conn.query(sql_txt, (err, result) =>{
+        if (err) res.send(err.message);
+        else res.render("home",{
+            course: result[0],
+            blog: result[1],
+        });
+    })
 });
 
 // About us
@@ -60,7 +67,14 @@ app.get('/privacy-policy', function (req, res) {
 
 // Blog
 app.get('/blog', function (req, res) {
-    res.render("blog");
+    const sql_txt = "select * from blog";
+    conn.query(sql_txt, (err, result) =>{
+        if (err) res.send(err.message);
+        else res.render("blog",{
+            blog: result,
+        });
+    })
+
 });
 // Terms
 app.get('/terms', function (req, res) {
