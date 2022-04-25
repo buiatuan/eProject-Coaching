@@ -47,6 +47,9 @@
 label{
     color: #3F3A64;
 }
+.label-form{
+    margin-bottom: 10px;
+}
 .text-form{
     color: red;
 }
@@ -55,9 +58,8 @@ label{
     height: 40px;
     border-radius: 10px;
     border: 3px solid #7C7C7C;
-    margin-top: 20px;
-    margin-bottom: 20px;
     outline: none;
+    margin-bottom: 10px;
 }
 .form-contact:focus{
     border-color: #3ABAB3;
