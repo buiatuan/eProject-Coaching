@@ -1,3 +1,6 @@
+section{
+    font-family: 'Noto Sans', sans-serif;
+}
 .container1{
     margin-bottom: 76px;
     display: flex;
@@ -114,8 +117,23 @@ div.tab button.active {
     border-top: none;
     margin-top: 50px;
 }
+#flex{
+    display: flex;
+    justify-content: space-between;
+}
+#information{
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+#information p{
+    font-size: 20px;
+    width:500px;
+    font-weight: 400;
+    margin-top: 30px;
+}
 .box1 img{
-    width: 663px;
+    /*width: 663px;*/
     height: 413px;
 }
 .box1 .tab .tablinks{

@@ -38,7 +38,7 @@
                  <img  src="images/imgs_product/price.png">
                  <div class="price-text">
                      <p style="padding-right: 211px;font-size: 20px;color: #3F3A64">Price</p>
-                     <p style="font-size: 20px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
+                     <p style="font-size: 25px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
                  </div>
              </div>
             <div class="instructor">
@@ -47,35 +47,35 @@
                 </div>
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Instructor :</p>
-                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= intructor.Name %></p>
+                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= intructor.Name %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/lectures.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Lectures :</p>
-                    <p style="font-size: 25px;font-weight: 100;color: #3F3A64"><%= course.Lectures %></p>
+                    <p style="font-size: 25px;font-weight: 600;color: #3F3A64"><%= course.Lectures %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/enrolled.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Enrolled:</p>
-                    <p style="font-size: 25px;font-weight: 100;color: #3F3A64"><%= course.Enrolled %></p>
+                    <p style="font-size: 25px;font-weight: 600;color: #3F3A64"><%= course.Enrolled %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/duration.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Duration:</p>
-                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= course.Duration %></p>
+                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= course.Duration %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/updated.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Updated:</p>
-                    <p style="font-size: 18px;font-weight: 100;color: #3F3A64"><%= course.Updated %></p>
+                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= course.Updated %></p>
 
                 </div>
             </div>
@@ -107,13 +107,14 @@
                     <b style="font-size: 25px">
                         Instructor
                     </b>
-                    <div>
+                    <div id="flex">
+                        <div>
                         <img src="<%= intructor.IntructorAvatar %>" >
-                        <b style="font-size: 25px;float: right;width: 261px;margin-top: 60px">
-                            <%= intructor.Name %> <br>
-                            Doctor of Psychology
-                            <p style="font-size: 20px;width:500px;font-weight: 100;margin-top: 30px"><%= intructor.Information %></p>
-                        </b>
+                        </div>
+                        <div id="information">
+                           <h3> <%= intructor.Name %></h3>
+                            <p><%= intructor.Information %></p>
+                        </div>
                     </div>
                 </div>
             </div>
