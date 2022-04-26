@@ -35,7 +35,7 @@ app.get('/test-database', (req, res) =>{
 
 // tạo trang chủ
 app.get('/', function (req, res) {
-    const sql_txt = "select * from courses; select * from blog";
+    const sql_txt = "select * from courses; select * from blog;";
     conn.query(sql_txt, (err, result) =>{
         if (err) res.send(err.message);
         else res.render("home",{
@@ -65,16 +65,6 @@ app.get('/privacy-policy', function (req, res) {
     res.render("privacy_policy");
 });
 
-// Blog
-app.get('/blog', function (req, res) {
-    const sql_txt = "select * from blog";
-    conn.query(sql_txt, (err, result) =>{
-        if (err) res.send(err.message);
-        else res.render("blog",{
-            blog: result,
-        });
-    })
-});
 // Terms
 app.get('/terms', function (req, res) {
     res.render("term");
@@ -135,6 +125,18 @@ app.get('/product-details', function (req, res) {
 // online classes pay fee
 app.get('/online-class-payfee', function (req, res) {
     res.render("online_classes_payfee");
+});
+
+// Blog
+app.get('/blog', function (req, res) {
+    const spid = req.query.category || "";
+    const sql_txt = "select * from blog where Category like '%"+spid+"%'";
+    conn.query(sql_txt, function (err, result) {
+        if(err) res.send(err.message);
+        else res.render("blog",{
+            category: result,
+        });
+    })
 });
 
 // blog detail
