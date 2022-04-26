@@ -77,6 +77,11 @@ body{
     line-height: 27px;
     padding-top: 35px;
     padding-left: 43px;
+    height: 110px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 .product-details button{
     width: 165px;
