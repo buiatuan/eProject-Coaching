@@ -1,3 +1,8 @@
+
+.clear{
+    clear: both;
+}
+
 section{
     font-family: 'Noto Sans', sans-serif;
 }
@@ -78,7 +83,7 @@ margin-left: 24px;
 div.tab {
     overflow: hidden;
     background-color: #F7F5F4;
-    width: 663px;
+    width: 654px;
     border-radius: 8px;
     margin-top: 50px;
 }
@@ -111,11 +116,41 @@ div.tab button.active {
 }
 
 /* định dạng nội dung hiển thị */
+
+#INSTRUCTOR{
+    width: 1000px;
+}
 .tabcontent {
     display: none;
     padding: 6px 12px;
     border-top: none;
     margin-top: 50px;
+}
+.tabcontent h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.instructor_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.instructor_main-img{
+    width: 40%;
+}
+.instructor_main-info{
+    width: 60%;
+    margin-top: 40px;
+}
+.tabcontent h4{
+    font-weight: 600;
+    font-size: 26px;
+}
+.tabcontent p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #3F3A64
 }
 #flex{
     display: flex;
@@ -132,9 +167,13 @@ div.tab button.active {
     font-weight: 400;
     margin-top: 30px;
 }
-.box1 img{
-    /*width: 663px;*/
+.box1 .img{
+    width: 654px;
     height: 413px;
+}
+.img img{
+    width: 100%;
+    height: 100%;
 }
 .box1 .tab .tablinks{
     color: #3F3A64;
@@ -168,13 +207,14 @@ div.tab button.active {
 }
 .box2 .price .price-text{
     display: flex;
-    float: right;
-
+    margin-left: 31px;
+    justify-content: space-between;
+    flex: 1;
 }
 .box2 .price {
     border-bottom: 1px solid #D0D1D3;
     margin-bottom: 20px;
-
+    display: flex;
 }
 .box2 .instructor {
     border-bottom: 1px solid #D0D1D3;
@@ -185,7 +225,7 @@ div.tab button.active {
 }
 .box2 .instructor img{
     width: 32px;
-    height: 36.33px;
+    height: 36px;
     color: #22536F;
     margin-bottom: 20px;
 }
@@ -198,6 +238,7 @@ div.tab button.active {
     margin-left: 45px;
 
 }
+
 .box3{
     margin-top: 50px;
 }
@@ -252,7 +293,13 @@ div.tab button.active {
     display: flex;
     margin-top: 15px;
 }
+.owl-stage-outer{
+    padding-bottom: 24px !important;
+}
 
+.item .item_row{
+    padding: 0;
+}
 .popular-course__item{
     width: 100%;
     margin-top: 50px;
@@ -329,10 +376,13 @@ div.tab button.active {
     margin-bottom: 0;
 }
 /**/
+.owl-theme .owl-nav{
+    display: none;
+}
 .owl-dots{
     text-align: center;
 }
-.owl-dot{
+/*.owl-dot{
     display: inline-block;
     height: 15px !important;
     width: 15px !important;
@@ -340,4 +390,11 @@ div.tab button.active {
     opacity: 0.8;
     border-radius: 50%;
     margin: 50px 5px 0;
+}*/
+.owl-theme .owl-dots .owl-dot span{
+    width: 12px !important;
+    height: 12px !important;
+}
+.owl-theme .owl-dots{
+    margin-top: 6px;
 }

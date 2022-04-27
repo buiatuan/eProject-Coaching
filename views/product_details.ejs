@@ -37,8 +37,8 @@
              <div class="price">
                  <img  src="images/imgs_product/price.png">
                  <div class="price-text">
-                     <p style="padding-right: 211px;font-size: 20px;color: #3F3A64">Price</p>
-                     <p style="font-size: 25px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
+                     <p style="font-size: 20px;color: #3F3A64">Price</p>
+                     <p style="font-size: 20px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
                  </div>
              </div>
             <div class="instructor">
@@ -47,35 +47,35 @@
                 </div>
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Instructor :</p>
-                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= intructor.Name %></p>
+                    <p style="font-size: 18px;font-weight: 400;color: #3F3A64"><%= instructor.Name %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/lectures.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Lectures :</p>
-                    <p style="font-size: 25px;font-weight: 600;color: #3F3A64"><%= course.Lectures %></p>
+                    <p style="font-size: 25px;font-weight: 400;color: #3F3A64"><%= course.Lectures %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/enrolled.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Enrolled:</p>
-                    <p style="font-size: 25px;font-weight: 600;color: #3F3A64"><%= course.Enrolled %></p>
+                    <p style="font-size: 25px;font-weight: 400;color: #3F3A64"><%= course.Enrolled %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/duration.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Duration:</p>
-                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= course.Duration %></p>
+                    <p style="font-size: 18px;font-weight: 400;color: #3F3A64"><%= course.Duration %></p>
                 </div>
             </div>
             <div class="instructor">
                 <img src="images/imgs_product/updated.png">
                 <div class="price-text">
                     <p style="font-size: 20px;color: #3F3A64">Updated:</p>
-                    <p style="font-size: 20px;font-weight: 600;color: #3F3A64"><%= course.Updated %></p>
+                    <p style="font-size: 18px;font-weight: 400;color: #3F3A64; text-align: right;margin-left: 4px"><%= course.Updated %></p>
 
                 </div>
             </div>
@@ -95,27 +95,22 @@
                     <button class="tablinks">INSTRUCTOR</button>
                 </div>
                 <div id="OVERVIEW" class="tabcontent">
-                    <b style="font-size: 25px;">
-                        Overview
-                    </b>
-                    <p style="margin-top: 30px;margin-bottom: 50px;font-size: 20px;color: #3F3A64">
-                        <%= course.Overview %>
-                    </p>
+                    <h3>Overview</h3>
+                    <p><%= course.Overview %></p>
 
                 </div>
                 <div id="INSTRUCTOR" class="tabcontent">
-                    <b style="font-size: 25px">
-                        Instructor
-                    </b>
-                    <div id="flex">
-                        <div>
-                        <img src="<%= intructor.IntructorAvatar %>" >
+                    <h3>Instructor</h3>
+                    <div class="instructor_main">
+                        <div class="instructor_main-img">
+                            <img src="<%= instructor.InstructorAvatar %>" >
                         </div>
-                        <div id="information">
-                           <h3> <%= intructor.Name %></h3>
-                            <p><%= intructor.Information %></p>
+                        <div class="instructor_main-info">
+                            <h4><%= instructor.Name %></h4>
+                            <p><%= instructor.Information %></p>
                         </div>
                     </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
@@ -128,65 +123,39 @@
                 <div class="popular-course__content">
                     <p>Related Courses You may Like</p>
                 </div>
-                   <div class="popular-course__list">
-                       <div class="owl-carousel owl-theme">
-                           <div class="item">
-                               <div class="col-md-12">
-                                   <div class="popular-course__item">
-                                       <div class="popular-course__item-row">
-                                           <div class="popular-course__item--icon">
-                                               <img src="images/images_home/coaching-post-1.jpg" alt="feature" class="popular-course__item-img">
-                                           </div>
-                                           <div class="popular-course__item--text">
-                                               <h4><a href="#">Safeguarding & Protecting Children (Online Classroom)</a></h4>
-                                               <span class="popular-course__item--point">$ 100.00</span>
-                                           </div>
+                <div class="popular-course__list">
+                   <div class="owl-carousel owl-theme">
+                       <% for (var i = 0; i < courses.length; i++){ %>
+                       <div class="item">
+                           <div class="col-md-12 item_row">
+                               <div class="popular-course__item">
+                                   <div class="popular-course__item-row">
+                                       <div class="popular-course__item--icon">
+                                           <img src="<%= courses[i].Images %>" alt="feature" class="popular-course__item-img">
+                                       </div>
+                                       <div class="popular-course__item--text">
+                                           <h4><a href="/product-details?id=<%= courses[i].ID %>"><%= courses[i].Name %></a></h4>
+                                           <span class="popular-course__item--point">$ <%= courses[i].Price %></span>
                                        </div>
                                    </div>
                                </div>
                            </div>
-                           <div class="item">
-                               <div class="col-md-12">
-                                   <div class="popular-course__item">
-                                       <div class="popular-course__item-row">
-                                           <div class="popular-course__item--icon">
-                                               <img src="images/images_home/coaching-post-2.jpg" alt="feature" class="popular-course__item-img">
-                                           </div>
-                                           <div class="popular-course__item--text">
-                                               <h4><a href="#">Safeguarding & Protecting Children 16 - 18 (Online Classroom)</a></h4>
-                                               <span class="popular-course__item--point">$ 110.00</span>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                           <div class="item">
-                               <div class="col-md-12">
-                                   <div class="popular-course__item">
-                                       <div class="popular-course__item-row">
-                                           <div class="popular-course__item--icon">
-                                               <img src="images/images_home/coaching-post-2.jpg" alt="feature" class="popular-course__item-img">
-                                           </div>
-                                           <div class="popular-course__item--text">
-                                               <h4><a href="#">Safeguarding & Protecting Children 16 - 18 (Online Classroom)</a></h4>
-                                               <span class="popular-course__item--point">$ 110.00</span>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
+                       </div>
+                       <% } %>
                    </div>
-         </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 
 
 
 
 </section>
-<%- include("common_link_js.ejs") %>
+
 <%- include("footer.ejs") %>
+
+<%- include("common_link_js.ejs") %>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.js">
 </script>
