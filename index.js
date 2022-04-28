@@ -111,7 +111,7 @@ app.get('/online-class', function (req, res) {
         });
     })
 });
-
+const moment = require("moment")
 // product details
 app.get('/product-details', function (req, res) {
     const courseID = req.query.id || 1;
@@ -119,6 +119,8 @@ app.get('/product-details', function (req, res) {
     conn.query(sql_txt1, (err, result1) =>{
         if (err) res.send(err.message);
         else if(result1.length > 0){
+            const c = result1[0];
+            c.Updated = moment(c.Updated).format("D/M/yyyy");
             const sql_txt2 = `select * from intructor where ID = ${result1[0].InstructorID}`;
             conn.query(sql_txt2, function (err2, result2) {
                 if(err2) res.send(err2.message);
@@ -127,7 +129,7 @@ app.get('/product-details', function (req, res) {
                     conn.query(sql_txt3, function (err3, result3){
                         if(err3) res.send(err3.message);
                         else res.render("product_details",{
-                            course: result1[0],
+                            course: c,
                             instructor: result2[0],
                             courses: result3
                         });

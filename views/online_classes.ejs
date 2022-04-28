@@ -21,7 +21,7 @@
         <form action="/" method="post" class="input">
             <div  class="form-check form-check-inline">
                 <input style="font-size: 25px " class="form-check-input" type="checkbox" id="inlineCheckbox1" name="price" value="option1">
-                <label style="font-size:20px;font-weight: 100" class="form-check-label" for="inlineCheckbox1">Free (4)</label>
+                <label style="font-size:20px;font-weight: 100" class="form-check-label" for="inlineCheckbox1" onclick="showProductFree ()">Free (4)</label>
             </div>
             <div class="form-check form-check-inline">
                 <input style="font-size: 25px;margin-left: 100px" class="form-check-input" type="checkbox" name="price" id="inlineCheckbox2" value="option2">
@@ -34,7 +34,8 @@
         <div class="product-details">
             <img src="<%= course[i].Images %>" >
             <div class="text">
-                <h5><%= course[i].Category %><span class="red">
+                <h5><%= course[i].Category %>
+                    <span class="red">
                         <% if (course[i].Price == 0){ %>
                             (FREE)
                         <%}else {%>
@@ -84,6 +85,21 @@
         }
     }
 
+</script>
+
+<script>
+    var product = document.querySelectorAll(".product");
+    console.log(product);
+
+    function showProductFree (){
+        var free = document.getElementsByClassName('red');
+        console.log(free);
+        for (var i = 1; i < free.length; i++){
+            if (free[i].innerText === "(FEE)"){
+                product[i].style.display = 'none';
+            }
+        }
+    }
 </script>
 </body>
 </html>
