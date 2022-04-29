@@ -30,7 +30,7 @@
                         <% } %>
                     </span>
                 </h4>
-                <p>Understand Connect, Thrive: Knowing Your People</p>
+                <p><%= course.Name %></p>
             </div>
         </div>
         <div class="box2">
@@ -96,7 +96,7 @@
                 </div>
                 <div id="OVERVIEW" class="tabcontent">
                     <h3>Overview</h3>
-                    <p><%= course.Overview %></p>
+                    <div class="overview"><%- course.Overview %></div>
 
                 </div>
                 <div id="INSTRUCTOR" class="tabcontent">
@@ -201,5 +201,7 @@
         }
     })
 </script>
+
+
 </body>
 </html>
