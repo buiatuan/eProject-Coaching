@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="summary-submit">
-                <button type="button" class="submit-btn" id="js-submit"><b> SUBMIT</b></button>
+                <button type="button" class="submit-btn" id="js-submit"><b> PAYMENT</b></button>
             </div>
         </div>
     </div>
@@ -124,36 +124,97 @@
         </div>
     </div>
 </div>
+
+<div id="toast">
+</div>
+
+
+
 <%- include("footer.ejs") %>
 <%- include("common_link_js") %>
 <!--show and hide submit-->
 <script>
+
+    //modal : thanh toán thành công
+
     const submit = document.getElementById('js-submit')
     const modal = document.querySelector('.js-modal')
     const modalContainer = document.querySelector('.js-modal-container')
     const modalClose = document.querySelector('.js-modal-close')
+    function paySuccess() {
+        // hiện thông báo
+        function showSubmit(){
+            modal.classList.add('open')
+        }
+        // ẩn thông báo
+        function hideSubmit(){
+            modal.classList.remove('open')
+        }
+        submit.addEventListener('click', showSubmit)
 
-    function showSubmit(){
-        modal.classList.add('open')
+        modalClose.addEventListener('click', hideSubmit)
+
+        modal.addEventListener('click', hideSubmit)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        })
     }
-    function hideSubmit(){
-        modal.classList.remove('open')
-    }
-    submit.addEventListener('click', showSubmit)
 
-    modalClose.addEventListener('click', hideSubmit)
+        // hiện không thanh toán được
+        function toast({
+                           title = '',
+                           message = '',
+                           duration = 3000
+                       }) {
+            const main = document.querySelector('#toast');
+            if (main) {
+                const toast = document.createElement('div');
+                toast.classList.add('toast');
+                // xoá class toast
+                const autoRemove = setTimeout(function () {
+                    toast.remove('toast')
+                }, duration + 1000);
 
-    modal.addEventListener('click', hideSubmit)
+                // ấn vào close xoá toast
+                toast.onclick = function (e) {
+                    if (e.target.closest('.toast__close')) {
+                        toast.remove('toast');
+                        clearTimeout(autoRemove);
+                    }
+                };
+                const delay = (duration / 1000).toFixed(2);
+                toast.style.animation = `slideInLeft ease .5s, fadeOut linear 1s ${delay}s forwards`;
+                var icon = 'fa-solid fa-circle-exclamation';
+                toast.innerHTML = `
+            <div class="toast__icon">
+                 <i class="${icon}"></i>
+            </div>
+            <div class="toast__body">
+                <h3><b>${title}</b></h3>
+                <p>${message}</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        `;
+                main.appendChild(toast);
+            }
+        }
+        function errorSuccess() {
+             toast({
+                title: 'Thất bại',
+                message: 'Không thể thanh toán, vui lòng chọn khoá học để thanh toán.',
+                duration: 2000
+            })
+        }
 
-    modalContainer.addEventListener('click', function(event){
-        event.stopPropagation()
-    })
+
 
 
 //    hiển thị tick
 
     var code = document.querySelector('.summary-oclass span');
-    console.log(code)
 
     function check() {
         var tick = document.querySelector('.js-tick');
@@ -201,7 +262,10 @@
             var result = Number.parseFloat(document.querySelector('.basket-total span').innerHTML) - vat -iCode;
             if(Number.parseFloat(totalSub.innerHTML) == '0.00'){
                 tprice.innerHTML = '0.00';
+                submit.addEventListener('click', errorSuccess) // thông báo k thánh toán đc
             }else{
+                console.log(totalSub.innerHTML)
+                paySuccess(); // thông báo thanh toán thành công
                 tprice.innerHTML = result.toFixed(2);
             }
         }
@@ -210,7 +274,7 @@
         subTotal();
 
 
-    //delele
+    //delele item
 
 
     var deleteItems = document.querySelectorAll('.delete');
