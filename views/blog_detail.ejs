@@ -15,7 +15,7 @@
 <body>
     <div class="app">
         <%- include("head.ejs") %>
-        <div class="container">
+        <div class="container" style="margin-bottom: 30px">
             <!--banner-->
             <div class="banner">
                 <h1>BLOG / detail</h1>
@@ -26,39 +26,11 @@
                     <h3><%= blog.Heading %></h3>
                     <p><%= blog.PostDate %></p>
                 </div>
+                <div style="width: 100%;">
+                    <img style="width: 100%" src="<%= blog.Images %>" alt="">
+                </div>
                 <div class="content_body">
-                    <!--<div class="content1">
-                        <p>
-                            As online learning has flourished over the past decade, it’s often hard skills-focused courses that are in the spotlight. Depending on the career we want to pursue, from data scientist to supply chain manager, we have the ability to pick and choose the hard skills that we want to develop. More likely tharowot, you’ve signed up for one of these courses on edX! 
-                        </p>
-                        <p>
-                            However, human skillsbody quickly becoming more essential and valuable for learners who are looking for opportunities to advance in their careers. As the workforce ebbs and flows, the job skills that are on the rise include leadership, project management, critical thinking, and writing.
-                        </p>
-                        <p>
-                            These essential human skills make collaboration more powerful, work more productive, and relationships even stronger. At edX, we think of these as “power skills.” 
-                        </p>
-                    </div>-->
-                    <div class="content2 row">
-                        <div class="col-lg-4">
-                            <img style="width: 100%;" src="<%= blog.Images %>" alt="image_article"/>
-                        </div>
-                        <div class="col-lg-7">
-                            <p><%= blog.Content %></p>
-                            <!--<p>
-                                It may feel counterintuitive as we move further away from in-person work and learning, but these human skills are key to thriving in a virtual-first world, also called the “Virtual Age.” Skills like organization, time management, mental health resilience, and communication are all essential to making a remote environment feel productive, efficient, and collaborative.
-                            </p>  
-                            <p>
-                                Today, edX offers courses and programs in a variety of these kinds of skills, from HarvardX’s  Remote Work Revolution for Everyone Course to CatalystX’s Inclusive Leadership Professional Certificate program to RITx’s MicroMasters® Project Management program.
-                            </p> -->
-                        </div>
-                    </div>
-                    <!--<div>
-                        <div class="content1">
-                            <p>
-                                They create transformative outcomes for individuals—in your career, in your personal life, and beyond. We know that these skills can be hard to learn, and even harder to teach. But, we also know that as we enter the Virtual Age, they are more important than ever.
-                            </p>
-                        </div> 
-                    </div>-->
+                    <%- blog.Content %>
                 </div>
             </article>
         </div>

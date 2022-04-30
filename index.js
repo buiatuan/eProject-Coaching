@@ -82,40 +82,59 @@ app.get('/register', function (req, res) {
 
 // Coaching course
 app.get('/coaching-course', function (req, res) {
-    const sql_txt = "select * from courses where Category like 'Workshops'";
+    var page = parseInt(req.query.page) || 1;
+    var perPage = 4;
+    var start = (page - 1) * perPage;
+    var end = page * perPage;
+    const sql_txt = "select * from courses";
     conn.query(sql_txt, (err, result) =>{
         if (err) res.send(err.message);
         else res.render("coaching_course",{
-            course: result,
+            course: result.slice(start, end),
         });
     })
 });
 
 // Online class
 app.get('/online-class', function (req, res) {
-    const sql_txt = "select * from courses where Category like 'Online Class'";
+    const category = req.query.category || "";
+
+    var page = parseInt(req.query.page) || 1;
+    var perPage = 4;
+    var start = (page - 1) * perPage;
+    var end = page * perPage;
+    const sql_txt = "select * from courses where Category like '%"+category+"%'";
     conn.query(sql_txt, (err, result) =>{
         if (err) res.send(err.message);
         else res.render("online_classes",{
-            course: result,
+            course: result.slice(start, end),
         });
     })
 });
-
+const moment = require("moment")
 // product details
 app.get('/product-details', function (req, res) {
-    const spid = req.query.id || 0;
-    const sql_txt1 = "select * from courses where ID = " +spid;
+    const courseID = req.query.id || 1;
+    const sql_txt1 = "select * from courses where ID = " +courseID;
     conn.query(sql_txt1, (err, result1) =>{
         if (err) res.send(err.message);
         else if(result1.length > 0){
-            const sql_txt2 = `select * from intructor where ID = ${result1[0].IntructorID}`;
+            const c = result1[0];
+            c.Updated = moment(c.Updated).format("D/M/yyyy");
+            const sql_txt2 = `select * from intructor where ID = ${result1[0].InstructorID}`;
             conn.query(sql_txt2, function (err2, result2) {
                 if(err2) res.send(err2.message);
-                else res.render("product_details",{
-                    course: result1[0],
-                    intructor: result2[0],
-                });
+                else if(result2.length > 0){
+                    const  sql_txt3 = `select * from courses where Category like '${result1[0].Category}'`;
+                    conn.query(sql_txt3, function (err3, result3){
+                        if(err3) res.send(err3.message);
+                        else res.render("product_details",{
+                            course: c,
+                            instructor: result2[0],
+                            courses: result3
+                        });
+                    })
+                }
             })
         }
         else res.send("404 Not found");
@@ -129,20 +148,25 @@ app.get('/online-class-payfee', function (req, res) {
 
 // Blog
 app.get('/blog', function (req, res) {
-    const spid = req.query.category || "";
-    const sql_txt = "select * from blog where Category like '%"+spid+"%'";
+    const category = req.query.category || "";
+
+    var page = parseInt(req.query.page) || 1;
+    var perPage = 4;
+    var start = (page - 1) * perPage;
+    var end = page * perPage;
+    const sql_txt = "select * from blog where Category like '%"+category+"%'";
     conn.query(sql_txt, function (err, result) {
         if(err) res.send(err.message);
         else res.render("blog",{
-            category: result,
+            category: result.slice(start, end),
         });
     })
 });
 
 // blog detail
 app.get('/blog-detail', function (req, res) {
-    const spid = req.query.id || 0;
-    const sql_txt = "select * from blog where ID = " +spid;
+    const blogID = req.query.id || 1;
+    const sql_txt = "select * from blog where ID = " +blogID;
     conn.query(sql_txt, (err, result) =>{
         if (err) res.send(err.message);
         else if(result.length > 0)
