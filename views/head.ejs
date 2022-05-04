@@ -13,17 +13,17 @@
                         <li><a class="nav-menu__item"  href="/">Home</a></li>
                         <li><a class="nav-menu__item"  href="/about-us">About us</a></li>
                         <li>
-                            <a class="nav-menu__item"  href="/coaching-course">
+                            <a class="nav-menu__item"  href="/coaching-course?page=1">
                                 Coaching Course
                                 <i class="rotate fa-solid fa-angle-down"></i>
                             </a>
                             <ul class="sub-menu">
                                 <li><a class="nav-menu__item"   href="/">Qualifications</a></li>
                                 <li>
-                                    <a class="nav-menu__item" href="/online-class?category=Workshops">WorkShops</a>
+                                    <a class="nav-menu__item" href="/online-class?category=Workshops&page=1">WorkShops</a>
                                 </li>
                                 <li>
-                                    <a class="nav-menu__item"  href="/online-class?category=Online Class">Online Classes</a>
+                                    <a class="nav-menu__item"  href="/online-class?category=Online Class&page=1">Online Classes</a>
                                 </li>
                             </ul>
                         </li>
@@ -34,7 +34,7 @@
 
                 <div class="header-search">
                     <div class="header-search__wrap">
-                        <input type="text" value="" class="header-search__input" placeholder="">
+                        <input type="text" id="search" class="header-search__input" placeholder="" onchange="searchCourse()">
 
                         <!--Search history-->
                         <div class="header-search__history">
@@ -44,21 +44,21 @@
                                     <a href="/">Courses free</a>
                                 </li>
                                 <li class="header-search__history-item">
-                                    <a href="/">Key 2</a>
+                                    <a href="">Courses fee</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <buttom  type="button" class="header-search--icon">
+                    <a href="" class="header-search--icon" id="search-course" onclick="searchCourse()">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                    </buttom>
+                    </a>
                 </div>
                 <!--<div class="my-course">
                     <span class="my-course__text">My course</span>
                 </div>-->
                 <div class="header-btn">
-                    <a href="/register" class="header-btn__link">Sign up</a>
-                    <a href="/sign-in" class="header-btn__link header-btn__link-active">Sign in</a>
+                    <a href="/register" class="header-btn__link header-btn__link-active">Sign up</a>
+                    <a href="/sign-in" class="header-btn__link ">Sign in</a>
                 </div>
             </div>
         </div>

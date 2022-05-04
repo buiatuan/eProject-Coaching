@@ -281,14 +281,33 @@
     color: #378886;
     transition: 0.4s;
 }
+.course-rate{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course-rate__text{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 
 .popular-course__item--point{
     font-size: 34px;
     font-weight: 600;
-    color: #61B7B2;
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
+    color: #61B7B2;/*
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 0 10px #d24b74;*/
+    margin-left: 10px;
 }
 .popular-course__item--text p{
     margin: 82px 0 0 110px;

@@ -22,3 +22,7 @@
     right: 207px;
     background: #3abab3;
 }
+
+.pagination li a.nav-page-active{
+    background-color: #bbb7b7;
+}

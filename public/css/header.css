@@ -198,6 +198,8 @@
     font-size: 18px;
     padding: 0 10px;
     cursor: pointer;
+    border: none;
+    background-color: #FFFFFF;
 }
 .header-btn{
     flex: 0.8;

@@ -252,11 +252,16 @@ div.tab button.active {
     align-items: center;
     border-radius: 10px;
 }
-.content-name h3{
+.content-name a{
     margin: 0;
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
+}
+.content-name:hover a{
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 
@@ -376,6 +381,7 @@ div.tab button.active {
     text-decoration: underline;
     margin-bottom: 0;
 }
+
 /**/
 .owl-theme .owl-nav{
     display: none;

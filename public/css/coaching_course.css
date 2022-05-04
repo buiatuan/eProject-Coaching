@@ -53,8 +53,9 @@ body{
 .product-details img{
     width:372px ;
     height:407px ;
-   margin-left: 150px;
+    margin-left: 150px;
     margin-top: 75px;
+    object-fit: cover;
 }
 .text h5{
     padding: 120px 0 10px 43px;
@@ -304,6 +305,11 @@ input:checked + .slider .off
 .pagination{
     margin-top: 60px;
 }
+
+.pagination li a.nav-page-active{
+    background-color: #bbb7b7;
+}
+
 /*.pagination > li > a{*/
 /*    background-color: rgb(27, 109, 133);*/
 /*    transition: 0.5s;*/

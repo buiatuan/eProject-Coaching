@@ -8,3 +8,14 @@ const navLinks = document.querySelectorAll(".nav-menu .nav-menu__item").forEach(
             link.classList.add('nav-menu__item-active');
         }
 })
+
+function searchCourse (){
+    var searchValue = document.getElementById('search');
+    var linkSearch = document.getElementById('search-course');
+    if (searchValue.value === ""){
+        linkSearch.href = `${window.location.pathname}`;
+    }else {
+        linkSearch.href = `/online-class?category=${searchValue.value}`
+    }
+}
+

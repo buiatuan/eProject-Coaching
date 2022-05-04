@@ -157,6 +157,12 @@ img{
     background: #22A68D;
     color: #fff;
 }
+
+.blog-category-active button{
+    background-color: #22A68D;
+    color: #FFFFFF;
+}
+
 .container .page-number{
     position: absolute;
     bottom: 0px;

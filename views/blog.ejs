@@ -89,5 +89,17 @@
 </section>
 <%- include("footer.ejs") %>
 <%- include("common_link_js") %>
+
+<script>
+    const activePageBlog = window.location.search;
+    console.log(activePageBlog);
+
+    const navLinks1 = document.querySelectorAll(".sidebar-item a").forEach(link =>{
+        console.log(link.href);
+        if(link.href === `http://localhost:2909/blog${activePageBlog}`) {
+            link.classList.add('blog-category-active');
+        }
+    })
+</script>
 </body>
 </html>

@@ -103,12 +103,20 @@ app.get('/online-class', function (req, res) {
     var perPage = 4;
     var start = (page - 1) * perPage;
     var end = page * perPage;
-    const sql_txt = "select * from courses where Category like '%"+category+"%'";
-    conn.query(sql_txt, (err, result) =>{
-        if (err) res.send(err.message);
-        else res.render("online_classes",{
-            course: result.slice(start, end),
-        });
+    const sql_txt1 = "select * from courses where Category like '%"+category+"%'";
+    conn.query(sql_txt1, (err1, result1) =>{
+        if (err1) res.send(err1.message);
+        else{
+            var name = req.query.name || "";
+            const sql_txt2 = "select * from courses where Name like '%"+name+"%'";
+            conn.query(sql_txt2, (err2, result2) =>{
+                if (err2) res.send(err2.message);
+                else res.render('online_classes',{
+                    course: result1.slice(start, end),
+                    search: result2,
+                })
+            })
+        }
     })
 });
 const moment = require("moment")

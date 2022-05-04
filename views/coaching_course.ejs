@@ -89,7 +89,7 @@
                     </span>
                 </h5>
                 <h3><%= course[i].Name %></h3>
-                <p><%= course[i].Overview %></p>
+                <p><%- course[i].Post %></p>
                 <a style="text-decoration: none" href="/product-details?id=<%= course[i].ID %>"><button class="content-name"> DEATAILS</button></a>
             </div>
         </div>
@@ -140,6 +140,18 @@
 
     }
 
+</script>
+
+<script>
+    const activePage1 = window.location.search;
+    console.log(activePage1);
+
+    const navLinks1 = document.querySelectorAll(".pagination li a").forEach(link =>{
+        console.log(link.href);
+        if(link.href === `http://localhost:2909/coaching-course${activePage1}`) {
+            link.classList.add('nav-page-active');
+        }
+    })
 </script>
 </body>
 </html>
