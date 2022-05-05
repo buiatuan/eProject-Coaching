@@ -151,7 +151,14 @@ app.get('/product-details', function (req, res) {
 
 // online classes pay fee
 app.get('/online-class-payfee', function (req, res) {
-    res.render("online_classes_payfee");
+    const courseID = req.query.id || 1;
+    const sql_txt = "select * from courses where ID = " +courseID;
+    conn.query(sql_txt, (err, result)=>{
+        if(err) res.send(err.message);
+        else if (result.length > 0) res.render('online_classes_payfee',{
+            course: result[0],
+        })
+    })
 });
 
 // Blog

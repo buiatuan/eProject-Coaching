@@ -16,11 +16,11 @@
     <div class="container">
         <div class="content__heading flexbox">
             <div class="content__blog-btn">
-                <p> ONLINE CLASSES</p>
+                <p style="text-transform: uppercase;font-weight: 600"> <%= course.Category %></p>
             </div>
             <div class="content__text">
-                <p>ONLINE CLASSES <span>(PAY FEE)</span></p>
-                <p>Understand Connect, Thrive: Knowing Your People</p>
+                <p><%= course.Category %> <span>(PAY FEE)</span></p>
+                <p><%= course.Name %></p>
             </div>
         </div>
 
@@ -35,6 +35,11 @@
                     </thead>
                     <tbody class="basket-tbody js-course">
                         <tr class="basket-product ">
+                            <td class="product__1"><%= course.Name %> - <%= course.Enrolled %></td>
+                            <td class="product__2">$<span><%= course.Price %></span></td>
+                            <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
+                        </tr>
+                        <!--<tr class="basket-product ">
                             <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
                             <td class="product__2">$<span>33.00</span></td>
                             <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
@@ -43,12 +48,7 @@
                             <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
                             <td class="product__2">$<span>33.00</span></td>
                             <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
-                        </tr>
-                        <tr class="basket-product ">
-                            <td class="product__1">Safeguarding & Protecting Children (Online Classroom) - 35744</td>
-                            <td class="product__2">$<span>33.00</span></td>
-                            <td class="product__3"><img src="images/imgs_payfee/clear.png" class="delete" alt="clear"></td>
-                        </tr>
+                        </tr>-->
                     </tbody>
                 </table>
                 <div class="basket-total">

@@ -38,7 +38,7 @@
                  <img  src="images/imgs_product/price.png">
                  <div class="price-text">
                      <p style="font-size: 20px;color: #3F3A64">Price</p>
-                     <p style="font-size: 20px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
+                     <p id="js_price" style="font-size: 20px;font-weight: 600;color: #61B7B2">$ <%= course.Price %></p>
                  </div>
              </div>
             <div class="instructor">
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div style="cursor: pointer" class="content-name">
-                <a href="/online-class-payfee">ENROLL COURSE</a>
+                <a id="js_course-link" href="/online-class-payfee?id=<%= course.ID %>" onclick="getLinkCourse()">ENROLL COURSE</a>
                 <span style="cursor: pointer;display: block">
                 </span>
             </div>
@@ -202,6 +202,18 @@
     })
 </script>
 
+<script>
+    var priceCourse = document.getElementById('js_price');
+    var courseLink = document.getElementById('js_course-link');
+    console.log(priceCourse.textContent);
+
+    function getLinkCourse(){
+        if (priceCourse.textContent === '$ 0'){
+            courseLink.href = `https://drive.google.com/drive/u/0/my-drive`;
+            courseLink.target = '_blank';
+        }
+    }
+</script>
 
 </body>
 </html>
